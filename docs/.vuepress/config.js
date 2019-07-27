@@ -8,5 +8,13 @@ module.exports = {
     repo: "prateekkumarweb/blog-vuepress",
     repoLabel: "Fork this site!",
     editLinks: true
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-89128710-1'
+      }
+    ]
+  ]
 }
