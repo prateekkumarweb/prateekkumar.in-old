@@ -57,3 +57,7 @@ It is currently used by IIT Hyderabad to schedule timetable for courses.
 ## Contact
 
 **Email:** [prateek@prateekkumar.in](mailto:prateek@prateekkumar.in)
+
+[Twitter](https://twitter.com/prateekkumarweb)
+[LinkedIn](https://www.linkedin.com/in/prateekkumarweb/)
+[Keybase](https://keybase.io/prateekkumarweb)
