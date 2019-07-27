@@ -1,12 +1,3 @@
 {
-  "name": "blog-vuepress",
-  "routes": [
-    {
-      "src": "https://www.prateekkumar.in/(.*)",
-      "status": 302,
-      "headers": {
-        "Location": "https://prateekkumar.in/$1"
-      }
-    }
-  ]
+  "name": "prateekkumar-in"
 }
