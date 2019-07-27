@@ -1,11 +1,12 @@
 module.exports = {
-  title: 'Vuepress',
-  description: 'This is a Zeit Now 2.0 example',
+  title: 'Prateek Kumar',
+  description: 'Developer. ❤️ Mathematics and Computer Science',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'Config Page', link: '/config' },
-    ]
+      { text: 'GitHub', link: 'http://github.com/prateekkumarweb' },
+    ],
+    repo: "prateekkumarweb/blog-vuepress",
+    repoLabel: "Fork this site!",
+    editLinks: true
   }
 }
