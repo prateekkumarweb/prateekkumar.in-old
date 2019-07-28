@@ -1,19 +1,32 @@
-# VuePress Example
+# Personal website - prateekkumar.in
 
-This directory is a brief example of a [VuePress](https://vuepress.vuejs.org/) app that can be deployed to ZEIT Now with zero configuration.
+This website is built using [VuePress](https://vuepress.vuejs.org/) and has been deployed to ZEIT Now.
 
-## How we created this example 
+## Run
 
-To get started with VuePress on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+To start the server in development mode:
 
 ```shell
-$ now init vuepress
+$ npm run dev
 ```
 
-## Deploying this Example
+To generate production site:
 
-Once initialized, you can deploy the VuePress example with just a single command:
+```shell
+$ npm run build
+```
+
+The site is generated in `public` folder.
+
+## Deploying this website
+
+To deploy this website on [ZEIT Now](https://zeit.co), run the below command:
 
 ```shell
 $ now
 ```
+
+---
+Copyright &copy; 2019 Prateek Kumar
+
+The source code is licensed under [MIT](LICENSE) and the content is licensed under [CC-BY-SA-4.0](https://choosealicense.com/licenses/cc-by-sa-4.0/).
