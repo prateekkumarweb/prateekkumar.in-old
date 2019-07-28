@@ -1,16 +1,16 @@
 ---
-permalink: /
 home: true
 heroImage: https://s.gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=500
-# actionText: See my blog →
-# actionLink: /posts/
+heroText: Prateek Kumar
+# actionText: Get Started →
+# actionLink: /guide/
 # features:
-#   - title: Developer
-#     details: All my projects are listed on GitHub.
-#   - title: Developer
-#     details: All my projects are listed on GitHub.
-#   - title: Developer
-#     details: All my projects are listed on GitHub.
+# - title: Simplicity First
+#   details: Minimal setup with markdown-centered project structure helps you focus on writing.
+# - title: Vue-Powered
+#   details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+# - title: Performant
+#   details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
 footer: CC-BY-SA-4.0 Licensed | Copyright © 2019-present Prateek Kumar
 ---
 
@@ -21,11 +21,18 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2019-present Prateek Kumar
 
 ## Projects
 
-### Open-WBO Incomplete Solver
+### FM and LP based UTVPI Over Approximation
+
+Algorithms for finding tight UTVPI (octagonal) over-approximations of polyhedra using linear programming and Fourier-Motzkin eliminations.
+
+[GitHub](https://github.com/IITH-Compilers/UTVPI-OA)
+
+### Open-WBO-Inc MaxSAT Solver
 
 Open-WBO-Inc is an incomplete MaxSAT solver based on the top Open-WBO with approximation strategies proposed in [this paper](https://link.springer.com/content/pdf/10.1007/978-3-319-98334-9_15.pdf).
 At MaxSAT Evaluation 2018, Open-WBO-Inc got 1st place in incomplete weighted track with 60s timeout and 2nd place in incomplete weighted track with 300s timeout.
 The results are available [here](https://maxsat-evaluations.github.io/2018/rankings.html).
+At MaxSAT Evaluation 2019, Open-WBO-Inc got 3rd place in incomplete weighted track with 60s and 300s timeout. The results are available [here](https://maxsat-evaluations.github.io/2019/rankings.html).
 
 [GitHub](https://github.com/sbjoshi/Open-WBO-Inc)
 
@@ -37,6 +44,12 @@ It is currently used by IIT Hyderabad to schedule timetable for courses.
 
 [Docs](https://timetabler.readthedocs.io/en/stable/)
 [GitHub](https://github.com/GoodDeeds/Timetabler)
+
+### Semaphore in Minix
+
+Implemention of semaphores in Minix Operating System.
+
+[GitHub](https://github.com/prateekkumarweb/minix-semaphore)
 
 ## Publications
 
