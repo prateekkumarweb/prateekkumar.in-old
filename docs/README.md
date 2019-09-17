@@ -54,7 +54,7 @@ Implemention of semaphores in Minix Operating System.
 ## Publications
 
 - Saurabh Joshi, [Prateek Kumar](/), Ruben Martins, Sukrut Rao.\
-  **Open-WBO-Inc: Approximation Strategies for Incomplete MaxSAT.** _JSAT vol 11._
+  **Open-WBO-Inc: Approximation Strategies for Incomplete Weighted MaxSAT.** _JSAT vol 11._
 
 - Shalini Jain, Utpal Bora, [Prateek Kumar](/), Vaibhav B. Sinha, Suresh Purini, Ramakrishna Upadrasta.\
   **An analysis of executable size reduction by LLVM passes.** _CSIT 2019._\
