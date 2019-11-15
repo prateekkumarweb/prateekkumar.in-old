@@ -2,8 +2,8 @@
 home: true
 heroImage: https://s.gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=500
 heroText: Prateek Kumar
-# actionText: Get Started →
-# actionLink: /guide/
+# actionText: Visit my blog →
+# actionLink: https://blog.prateekkumar.in
 # features:
 # - title: Simplicity First
 #   details: Minimal setup with markdown-centered project structure helps you focus on writing.
@@ -14,9 +14,13 @@ heroText: Prateek Kumar
 footer: CC-BY-SA-4.0 Licensed | Copyright © 2019-present Prateek Kumar
 ---
 
+[<Badge text="Twitter" vertical="middle"/>](https://twitter.com/prateekkumarweb)
+[<Badge text="LinkedIn" vertical="middle"/>](https://www.linkedin.com/in/prateekkumarweb/)
+[<Badge text="Google Scholar" vertical="middle"/>](https://scholar.google.co.in/citations?user=M1NFyhAAAAAJ&hl=en)
+
 ## Education
 
-- B. Tech. (Honors) in [Computer Science and Engineering](https://cse.iith.ac.in), 2015 - 2019<br>
+- B. Tech. (Honors) in [Computer Science and Engineering](https://cse.iith.ac.in), 2015 - 2019\
   [Indian Institute of Technology Hyderabad](https://iith.ac.in)
 
 ## Projects
@@ -73,6 +77,3 @@ Implemention of semaphores in Minix Operating System.
 ## Contact
 
 **Email:** [prateek@prateekkumar.in](mailto:prateek@prateekkumar.in)
-
-[Twitter](https://twitter.com/prateekkumarweb)
-[LinkedIn](https://www.linkedin.com/in/prateekkumarweb/)

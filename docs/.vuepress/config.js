@@ -16,12 +16,16 @@ module.exports = {
     repoLabel: "Fork this site!",
     editLinks: true
   },
-  plugins: [
-    [
-      '@vuepress/google-analytics',
-      {
-        'ga': 'UA-89128710-1'
-      }
-    ]
-  ]
+  plugins: {
+    '@vuepress/google-analytics': {
+      'ga': 'UA-89128710-1',
+    },
+    '@vuepress/back-to-top': {},
+    '@vuepress/nprogress': {},
+    '@vuepress/pwa': {}
+  },
+  markdown: {
+    lineNumbers: true
+  },
+  evergreen: true
 }
