@@ -76,4 +76,3 @@ Implemention of semaphores in Minix Operating System.
 
 [Twitter](https://twitter.com/prateekkumarweb)
 [LinkedIn](https://www.linkedin.com/in/prateekkumarweb/)
-[Keybase](https://keybase.io/prateekkumarweb)
