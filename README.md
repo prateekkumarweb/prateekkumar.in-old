@@ -1,30 +1,22 @@
 # Personal website - prateekkumar.in
 
-This website is built using [VuePress](https://vuepress.vuejs.org/) and has been deployed to ZEIT Now.
+This website is built using [VuePress](https://vuepress.vuejs.org/) and has been deployed to Netlify.
 
 ## Run
 
 To start the server in development mode:
 
 ```shell
-$ npm run dev
+npm run dev
 ```
 
 To generate production site:
 
 ```shell
-$ npm run build
+npm run build
 ```
 
-The site is generated in `public` folder.
-
-## Deploying this website
-
-To deploy this website on [ZEIT Now](https://zeit.co), run the below command:
-
-```shell
-$ now
-```
+The site is generated in `docs/.vuepress/dist` folder.
 
 ---
 Copyright &copy; 2019 Prateek Kumar
