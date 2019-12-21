@@ -40,7 +40,7 @@ import PublicationsList from "~/components/PublicationsList.vue";
 
 export default {
   metaInfo: {
-    title: "Home"
+    title: "Prateek Kumar | Developer"
   },
   components: {
     EducationList,
