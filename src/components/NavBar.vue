@@ -1,57 +1,29 @@
 <template>
-  <nav class="navbar is-transparent has-shadow" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <g-link class="navbar-item" to="/">
-        <strong>{{$static.metadata.siteName}}</strong>
-      </g-link>
+  <b-navbar>
+    <template slot="brand">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }">Prateek Kumar</b-navbar-item>
+    </template>
 
-      <a
-        role="button"
-        class="navbar-burger burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarMenu"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbarMenu" class="navbar-menu">
-      <div class="navbar-start">
-        <!-- <g-link class="navbar-item" to="/">Home</g-link> -->
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a href="https://github.com/prateekkumarweb" class="button is-black">
-              <span class="icon">
-                <font-awesome :icon="['fab', 'github']" />
-              </span>
-            </a>
-            <a href="https://twitter.com/prateekkumarweb" class="button is-info">
-              <span class="icon">
-                <font-awesome :icon="['fab', 'twitter']" />
-              </span>
-            </a>
-            <a href="https://www.linkedin.com/in/prateekkumarweb" class="button is-link">
-              <span class="icon">
-                <font-awesome :icon="['fab', 'linkedin']" />
-              </span>
-            </a>
-          </div>
+    <template slot="end">
+      <b-navbar-item tag="div">
+        <div class="buttons">
+          <a class="button is-github" href="https://github.com/prateekkumarweb">
+            <span class="icon">
+              <font-awesome :icon="['fab', 'github']"></font-awesome>
+            </span>
+          </a>
+          <a class="button is-twitter" href="https://twitter.com/prateekkumarweb">
+            <span class="icon">
+              <font-awesome :icon="['fab', 'twitter']"></font-awesome>
+            </span>
+          </a>
+          <a class="button is-linkedin" href="https://www.linkedin.com/in/prateekkumarweb">
+            <span class="icon">
+              <font-awesome :icon="['fab', 'linkedin']"></font-awesome>
+            </span>
+          </a>
         </div>
-      </div>
-    </div>
-  </nav>
+      </b-navbar-item>
+    </template>
+  </b-navbar>
 </template>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>

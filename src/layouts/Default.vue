@@ -10,21 +10,28 @@
       <div class="content has-text-centered">
         <p>
           <strong class="has-text-white">&copy; 2019 Prateek Kumar.</strong>
-          The source code is licensed
+          The source code for this website is licensed under
           <a
-            class="has-text-primary"
-            href="http://opensource.org/licenses/mit-license.php"
-          >MIT</a>. The website content
-          is licensed
+            class="has-text-white has-text-underline"
+            href="https://opensource.org/licenses/mit-license.php"
+          >MIT</a>.
+          The website content is licensed under
           <a
-            class="has-text-primary"
-            href="http://creativecommons.org/licenses/by-sa/4.0/"
+            class="has-text-white has-text-underline"
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
           >CC BY SA 4.0</a>.
+          <br />Built using Vue.js, Bulma, Gridsome. Deployed using Netlify.
         </p>
       </div>
     </footer>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.has-text-underline {
+  text-decoration: underline;
+}
+</style>
 
 <static-query>
 query {

@@ -7,7 +7,7 @@ import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-ic
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
-import 'buefy/dist/buefy.css'
+import '~/bulma.scss'
 import DefaultLayout from '~/layouts/Default.vue'
 
 config.autoAddCss = false

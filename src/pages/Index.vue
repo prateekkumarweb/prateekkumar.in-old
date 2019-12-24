@@ -4,23 +4,35 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <g-image
-            class="profile-img"
+            class="profile-image"
             src="https://s.gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=500"
           />
+
           <h1 class="title is-3">Prateek Kumar</h1>
           <p class="subtitle is-4">Developer. ❤️ Mathematics and Computer Science.</p>
+          <div>
+            <g-link to="/blog/" class="button is-primary">Go to my blog</g-link>
+          </div>
         </div>
       </div>
     </div>
 
-    <EducationList />
+    <Section title="Education">
+      <ul>
+        <li>
+          B. Tech. (Honors) in
+          <g-link to="https://cse.iith.ac.in">Computer Science and Engineering</g-link>, 2015 - 2019
+          <br />
+          <g-link to="https://iith.ac.in">Indian Institute of Technology Hyderabad</g-link>
+        </li>
+      </ul>
+    </Section>
 
-    <ProjectsList />
+    <Section title="Publications">
+      <PublicationList />
+    </Section>
 
-    <PublicationsList />
-
-    <div class="tile is-vertical box notification is-light">
-      <h2 class="title is-4">Contact</h2>
+    <Section title="Contact">
       <div class="buttons">
         <a href="mailto:prateek@prateekkumar.in" class="button">
           <span class="icon">
@@ -29,29 +41,29 @@
           <span>prateek@prateekkumar.in</span>
         </a>
       </div>
-    </div>
+    </Section>
   </Layout>
 </template>
 
+<style scoped>
+.profile-image {
+  height: 300px;
+}
+</style>
+
 <script>
-import EducationList from "~/components/EducationList.vue";
-import ProjectsList from "~/components/ProjectsList.vue";
-import PublicationsList from "~/components/PublicationsList.vue";
+import Section from "~/components/home/Section";
+import PublicationItem from "~/components/home/PublicationItem";
+import PublicationList from "~/components/home/PublicationList";
 
 export default {
   metaInfo: {
     title: "Prateek Kumar | Developer"
   },
   components: {
-    EducationList,
-    ProjectsList,
-    PublicationsList
+    Section,
+    PublicationItem,
+    PublicationList
   }
 };
 </script>
-
-<style scoped>
-.profile-img {
-  max-width: 300px;
-}
-</style>
