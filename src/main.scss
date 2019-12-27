@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.icon-button {
+  @apply bg-gray-300 text-gray-800 font-bold py-3 px-3 mx-1 rounded inline-flex items-center;
+}
+
+.icon-button:hover {
+  @apply bg-gray-400;
+}

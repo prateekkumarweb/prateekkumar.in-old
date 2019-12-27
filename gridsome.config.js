@@ -1,9 +1,25 @@
+const tailwind = require('tailwindcss')
+const purgecss = require('@fullhuman/postcss-purgecss')
+
+const postcssPlugins = [
+  tailwind(),
+]
+
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
+
 module.exports = {
   siteName: 'Prateek Kumar',
   siteDescription: 'Developer | Rust and JavaScript | WebAssembly enthusiast.',
   titleTemplate: '%s',
   templates: {
     Post: '/blog/:title',
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins,
+      },
+    },
   },
   plugins: [
     {
