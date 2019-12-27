@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.4.0",
     "buefy": "^0.8.8",
     "gridsome": "^0.7.0"
   },
@@ -18,7 +20,6 @@
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "^0.1.8",
-    "@gridsome/transformer-remark": "^0.4.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0"
   }

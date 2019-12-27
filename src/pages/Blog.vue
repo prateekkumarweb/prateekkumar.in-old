@@ -4,22 +4,33 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title is-3">Blog</h1>
-          <p class="subtitle is-4">Coming soon!</p>
         </div>
       </div>
+    </div>
+    <div class="container">
+      <ul>
+        <li v-for="edge in $page.allPost.edges" :key="edge.node.id">
+          <a :href="edge.node.path">{{edge.node.title}}</a>
+          <p>{{edge.node.excerpt}}</p>
+        </li>
+      </ul>
     </div>
   </Layout>
 </template>
 
 <page-query>
 query {
-    allPost {
-        edges {
-            node {
-                title
-            }
-        }
+  allPost {
+    totalCount
+    edges {
+      node {
+        id
+        title
+        path
+        excerpt
+      }
     }
+  }
 }
 </page-query>
 

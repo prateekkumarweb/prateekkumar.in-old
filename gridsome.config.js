@@ -19,5 +19,15 @@ module.exports = {
         typeName: 'Post',
       }
     },
-  ]
+  ],
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'fas fa-link',
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
+    }
+  }
 }
