@@ -1,3 +1,5 @@
+@import "prism.css";
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
@@ -63,7 +65,7 @@ html {
   }
 
   ul {
-    @apply list-disc;
+    @apply list-disc list-inside;
   }
 
   img {

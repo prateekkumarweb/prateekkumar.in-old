@@ -14,7 +14,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
-import "prismjs/themes/prism.css";
 import "~/main.scss";
 import DefaultLayout from "~/layouts/Default.vue";
 
