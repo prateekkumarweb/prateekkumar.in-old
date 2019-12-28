@@ -9,7 +9,9 @@
           />
 
           <h1 class="title is-3">Prateek Kumar</h1>
-          <p class="subtitle is-4">Developer. ❤️ Mathematics and Computer Science.</p>
+          <p class="subtitle is-4">
+            Developer. ❤️ Mathematics and Computer Science.
+          </p>
           <div>
             <g-link to="/blog/" class="button is-primary">Go to my blog</g-link>
           </div>
@@ -21,9 +23,13 @@
       <ul>
         <li>
           B. Tech. (Honors) in
-          <g-link to="https://cse.iith.ac.in">Computer Science and Engineering</g-link>, 2015 - 2019
+          <g-link to="https://cse.iith.ac.in"
+            >Computer Science and Engineering</g-link
+          >, 2015 - 2019
           <br />
-          <g-link to="https://iith.ac.in">Indian Institute of Technology Hyderabad</g-link>
+          <g-link to="https://iith.ac.in"
+            >Indian Institute of Technology Hyderabad</g-link
+          >
         </li>
       </ul>
     </Section>

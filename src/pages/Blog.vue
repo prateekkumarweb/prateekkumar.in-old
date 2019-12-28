@@ -10,8 +10,8 @@
     <div class="container">
       <ul>
         <li v-for="edge in $page.allPost.edges" :key="edge.node.id">
-          <a :href="edge.node.path">{{edge.node.title}}</a>
-          <p>{{edge.node.excerpt}}</p>
+          <a :href="edge.node.path">{{ edge.node.title }}</a>
+          <p>{{ edge.node.excerpt }}</p>
         </li>
       </ul>
     </div>
@@ -19,19 +19,19 @@
 </template>
 
 <page-query>
-query {
-  allPost {
-    totalCount
-    edges {
-      node {
-        id
-        title
-        path
-        excerpt
+  query {
+    allPost {
+      totalCount
+      edges {
+        node {
+          id
+          title
+          path
+          excerpt
+        }
       }
     }
   }
-}
 </page-query>
 
 <script>

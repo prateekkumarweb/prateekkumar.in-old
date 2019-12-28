@@ -3,7 +3,7 @@
     <div class="hero">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title is-3">{{$page.post.title}}</h1>
+          <h1 class="title is-3">{{ $page.post.title }}</h1>
           <p class="subtitle is-4">Prateek Kumar</p>
         </div>
       </div>
@@ -13,13 +13,13 @@
 </template>
 
 <page-query>
-query Post ($path: String!) {
-  post: post (path: $path) {
-    id
-    title
-    content
+  query Post($path: String!) {
+    post: post(path: $path) {
+      id
+      title
+      content
+    }
   }
-}
 </page-query>
 
 <script>

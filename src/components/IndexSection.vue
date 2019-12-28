@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <h2 class="title is-4">{{title}}</h2>
+    <h2 class="title is-4">{{ title }}</h2>
     <div class="container">
       <slot />
     </div>

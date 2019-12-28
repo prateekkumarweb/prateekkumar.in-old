@@ -1,9 +1,10 @@
 <template>
   <div>
-    {{authors.join(", ")}}
+    {{ authors.join(", ") }}
     <br />
-    <strong>{{title}}</strong>&nbsp;
-    <em>{{conf}}</em>&nbsp;
+    <strong>{{ title }}</strong
+    >&nbsp; <em>{{ conf }}</em
+    >&nbsp;
     <a v-if="pdf" :href="pdf">PDF</a>
   </div>
 </template>
