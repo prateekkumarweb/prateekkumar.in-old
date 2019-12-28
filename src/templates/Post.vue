@@ -1,15 +1,14 @@
 <template>
   <Layout>
-    <div class="border-b-2 border-gray-400 pb-6 mb-4 items-center">
-      <div>
-        <g-link to="/blog" class="link">
+    <div class="mb-4 items-center">
+      <div class="flex justify-between">
+        <g-link to="/blog/" class="link">
           <font-awesome :icon="['fas', 'arrow-left']"></font-awesome>
           <span class="pl-2">Back to all posts</span>
         </g-link>
-      </div>
-      <div class="my-auto px-6 text-center">
-        <h1 class="text-4xl">{{ $page.post.title }}</h1>
-        <p class="text-gray-600">{{ $page.post.date.substring(0, 10) }}</p>
+        <span class="text-gray-600">{{
+          $page.post.date.substring(0, 10)
+        }}</span>
       </div>
     </div>
 

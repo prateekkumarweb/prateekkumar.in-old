@@ -2,8 +2,20 @@
   <header
     class="flex flex-col sm:flex-row items-center justify-around py-3 bg-primary text-white"
   >
-    <div class="text-2xl my-3">
-      <a href="/">Prateek Kumar</a>
+    <div class="my-3 flex items-baseline">
+      <div class="mr-3">
+        <a href="/" class="text-2xl">Prateek Kumar</a>
+      </div>
+      <nav class="">
+        <ul class="flex text-xle">
+          <li class="mx-3">
+            <g-link to="/" class="hover:text-gray-400">Home</g-link>
+          </li>
+          <li class="mx-3">
+            <g-link to="/blog/" class="hover:text-gray-400">Blog</g-link>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div>
       <a class="icon-button" href="https://github.com/prateekkumarweb">

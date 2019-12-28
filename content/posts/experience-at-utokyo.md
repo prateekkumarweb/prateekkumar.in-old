@@ -1,5 +1,8 @@
 ---
 date: 2018-10-05
+tags:
+  - UTokyo
+  - Internship
 ---
 
 # Experience at UTokyo

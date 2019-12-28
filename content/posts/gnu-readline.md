@@ -1,5 +1,10 @@
 ---
 date: 2018-08-18
+tags:
+  - Bash
+  - C++
+  - GNU
+  - Readline
 ---
 
 # GNU Readline for Tab autocomplete and Bash like History

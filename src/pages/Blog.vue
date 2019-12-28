@@ -1,12 +1,5 @@
 <template>
   <Layout>
-    <div class="border-b-2 border-gray-400 pb-6 mb-4 items-center">
-      <div class="my-auto px-6 items-center text-center">
-        <h1 class="text-4xl">Blog</h1>
-        <p class="text-gray-600">Posts by Prateek Kumar</p>
-      </div>
-    </div>
-
     <Section title="Posts">
       <ul>
         <li
