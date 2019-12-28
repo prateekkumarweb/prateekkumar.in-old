@@ -6,6 +6,7 @@
       <g-image
         class="h-64 w-64 rounded-full"
         src="https://s.gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=500"
+        alt="Profile"
       />
 
       <div
