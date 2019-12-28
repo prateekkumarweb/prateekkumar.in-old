@@ -34,7 +34,14 @@ export default {
   metaInfo: {
     title: "Prateek Kumar | Developer"
   },
-  components: {}
+  components: {},
+  mounted() {
+    this.$nextTick(function() {
+      if (window.MathJax) {
+        window.MathJax.typeset();
+      }
+    });
+  }
 };
 </script>
 
