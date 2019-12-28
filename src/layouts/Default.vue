@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col min-h-screen">
-    <NavBar />
-    <section class="flex-grow mx-auto">
+    <NavBar class="pb-48" />
+    <section class="flex-grow mx-auto -mt-40 p-6">
       <slot />
     </section>
     <Footer />

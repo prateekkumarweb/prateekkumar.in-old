@@ -37,7 +37,8 @@
 <script>
 export default {
   metaInfo: {
-    title: "Prateek Kumar | Developer"
+    title:
+      "Prateek Kumar | Developer | Rust and JavaScript | WebAssembly Enthusiast"
   },
   components: {}
 };

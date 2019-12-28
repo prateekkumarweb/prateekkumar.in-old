@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 
 module.exports = {
   siteName: "Prateek Kumar",
-  siteDescription: "Developer | Rust and JavaScript | WebAssembly enthusiast.",
+  siteDescription: "Developer | Rust and JavaScript | WebAssembly Enthusiast",
   titleTemplate: "%s",
   templates: {
     Post: "/blog/:title"

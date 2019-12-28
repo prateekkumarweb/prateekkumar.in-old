@@ -1,7 +1,7 @@
 <template>
-  <section class="section">
-    <h2 class="title is-4">{{ title }}</h2>
-    <div class="container">
+  <section class="py-4">
+    <h2 class="text-2xl">{{ title }}</h2>
+    <div class="mt-3">
       <slot />
     </div>
   </section>

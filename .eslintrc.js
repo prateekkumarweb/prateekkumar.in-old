@@ -1,4 +1,4 @@
 module.exports = {
-  plugins: ["gridsome"],
-  extends: ["prettier", "plugin:gridsome/recommended"]
+  plugins: ["prettier", "gridsome"],
+  extends: ["plugin:prettier/recommended", "plugin:gridsome/recommended"]
 };

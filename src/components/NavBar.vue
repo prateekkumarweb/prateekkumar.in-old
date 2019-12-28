@@ -2,7 +2,7 @@
   <header
     class="flex flex-col sm:flex-row items-center justify-around py-3 bg-primary text-white"
   >
-    <div class="text-xl my-3">
+    <div class="text-2xl my-3">
       <a href="/">Prateek Kumar</a>
     </div>
     <div>

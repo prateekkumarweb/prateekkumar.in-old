@@ -11,8 +11,16 @@ html {
 
 .icon-button {
   @apply bg-gray-300 text-gray-800 font-bold py-3 px-3 mx-1 rounded inline-flex items-center;
+
+  &:hover {
+    @apply bg-gray-400;
+  }
 }
 
-.icon-button:hover {
-  @apply bg-gray-400;
+.link {
+  @apply text-primary underline;
+
+  &:hover {
+    @apply no-underline;
+  }
 }

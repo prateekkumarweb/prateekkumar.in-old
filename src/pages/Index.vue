@@ -1,61 +1,70 @@
 <template>
   <Layout>
-    <div class="hero">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <g-image
-            class="profile-image"
-            src="https://s.gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=500"
-          />
+    <div class="container shadow-lg rounded-lg bg-white p-8">
+      <div
+        class="flex flex-col md:flex-row border-b-2 border-gray-400 pb-6 mb-4 items-center"
+      >
+        <g-image
+          class="h-64 w-64 rounded-full"
+          src="https://s.gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=500"
+        />
 
-          <h1 class="title is-3">Prateek Kumar</h1>
-          <p class="subtitle is-4">
-            Developer. ❤️ Mathematics and Computer Science.
+        <div
+          class="flex flex-col h-full my-auto px-6 items-center md:items-start"
+        >
+          <h1 class="text-4xl">{{ $page.metadata.siteName }}</h1>
+          <p class="text-xl text-center md:text-left">
+            {{ $page.metadata.siteDescription }}
           </p>
-          <div>
-            <g-link to="/blog/" class="button is-primary">Go to my blog</g-link>
-          </div>
+          <g-link
+            to="/blog/"
+            class="bg-primary hover:bg-white hover:text-primary border-primary border-2 inline-block text-white font-semibold rounded p-2 mt-4"
+            >Go to my blog</g-link
+          >
         </div>
       </div>
+
+      <Section title="Education">
+        <ul>
+          <li>
+            B. Tech. (Honors) in
+            <g-link to="https://cse.iith.ac.in" class="link"
+              >Computer Science and Engineering</g-link
+            >, 2015 - 2019
+            <br />
+            <g-link to="https://iith.ac.in" class="link"
+              >Indian Institute of Technology Hyderabad</g-link
+            >
+          </li>
+        </ul>
+      </Section>
+
+      <Section title="Publications">
+        <PublicationList />
+      </Section>
+
+      <Section title="Contact">
+        <div class="buttons">
+          <a href="mailto:prateek@prateekkumar.in" class="icon-button">
+            <span class="icon pr-2">
+              <font-awesome :icon="['fas', 'envelope']" />
+            </span>
+            <span>prateek@prateekkumar.in</span>
+          </a>
+        </div>
+      </Section>
     </div>
-
-    <Section title="Education">
-      <ul>
-        <li>
-          B. Tech. (Honors) in
-          <g-link to="https://cse.iith.ac.in"
-            >Computer Science and Engineering</g-link
-          >, 2015 - 2019
-          <br />
-          <g-link to="https://iith.ac.in"
-            >Indian Institute of Technology Hyderabad</g-link
-          >
-        </li>
-      </ul>
-    </Section>
-
-    <Section title="Publications">
-      <PublicationList />
-    </Section>
-
-    <Section title="Contact">
-      <div class="buttons">
-        <a href="mailto:prateek@prateekkumar.in" class="button">
-          <span class="icon">
-            <font-awesome :icon="['fas', 'envelope']" />
-          </span>
-          <span>prateek@prateekkumar.in</span>
-        </a>
-      </div>
-    </Section>
   </Layout>
 </template>
 
-<style scoped>
-.profile-image {
-  height: 300px;
-}
-</style>
+<page-query>
+  query {
+    metadata {
+      siteName
+      siteDescription
+    }
+  }
+</page-query>
 
 <script>
 import Section from "~/components/home/Section";
