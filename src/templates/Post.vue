@@ -6,7 +6,7 @@
           <font-awesome :icon="['fas', 'arrow-left']"></font-awesome>
           <span class="pl-2">Back to all posts</span>
         </g-link>
-        <span class="text-gray-600">{{
+        <span class="text-gray-700">{{
           $page.post.date.substring(0, 10)
         }}</span>
       </div>
