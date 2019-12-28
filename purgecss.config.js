@@ -20,8 +20,10 @@ module.exports = {
     "a",
     "g-image",
     "g-image--lazy",
-    "g-image--loaded"
+    "g-image--loaded",
+    "svg-inline--fa"
   ],
+  whitelistPatterns: [/fa-[^ ]*/],
   extractors: [
     {
       extractor: TailwindExtractor,
