@@ -12,7 +12,7 @@
         class="has-text-white has-text-underline"
         href="https://creativecommons.org/licenses/by-sa/4.0/"
       >CC BY SA 4.0</a>.
-      <br />Built using Vue.js, Bulma, Gridsome. Deployed using Netlify.
+      <br />Built using Vue.js, Tailwindcss, Gridsome. Deployed using Netlify.
     </p>
   </footer>
 </template>

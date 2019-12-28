@@ -8,7 +8,7 @@
         </div>
       </div>
     </div>
-    <div class="content" v-html="$page.post.content"></div>
+    <div class="markdown" v-html="$page.post.content"></div>
   </Layout>
 </template>
 
