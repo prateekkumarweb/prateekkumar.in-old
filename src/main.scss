@@ -24,3 +24,49 @@ html {
     @apply no-underline;
   }
 }
+
+.markdown {
+  @apply px-4;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply pt-4 pb-1 font-semibold;
+  }
+
+  h1 {
+    @apply hidden;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  p,
+  pre {
+    @apply py-2 text-base;
+  }
+
+  a {
+    @apply link;
+  }
+
+  p code {
+    @apply bg-red-100 px-1;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  img {
+    @apply py-2;
+  }
+}

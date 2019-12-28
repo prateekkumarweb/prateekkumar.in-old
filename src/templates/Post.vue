@@ -1,14 +1,21 @@
 <template>
   <Layout>
-    <div class="hero">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-3">{{ $page.post.title }}</h1>
-          <p class="subtitle is-4">Prateek Kumar</p>
-        </div>
+    <div class="border-b-2 border-gray-400 pb-6 mb-4 items-center">
+      <div>
+        <g-link to="/blog" class="link">
+          <font-awesome :icon="['fas', 'arrow-left']"></font-awesome>
+          <span class="pl-2">Back to all posts</span>
+        </g-link>
+      </div>
+      <div class="my-auto px-6 text-center">
+        <h1 class="text-4xl">{{ $page.post.title }}</h1>
+        <p class="text-gray-600">{{ $page.post.date.substring(0, 10) }}</p>
       </div>
     </div>
-    <div class="markdown" v-html="$page.post.content"></div>
+
+    <Section title="Posts">
+      <div class="markdown" v-html="$page.post.content"></div>
+    </Section>
   </Layout>
 </template>
 
@@ -18,6 +25,7 @@
       id
       title
       content
+      date
     }
   }
 </page-query>

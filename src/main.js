@@ -7,7 +7,11 @@ import {
   faTwitter,
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faLink,
+  faArrowLeft
+} from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import "prismjs/themes/prism.css";
@@ -15,7 +19,7 @@ import "~/main.scss";
 import DefaultLayout from "~/layouts/Default.vue";
 
 config.autoAddCss = false;
-library.add(faGithub, faTwitter, faLinkedin, faEnvelope, faLink);
+library.add(faGithub, faTwitter, faLinkedin, faEnvelope, faLink, faArrowLeft);
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component

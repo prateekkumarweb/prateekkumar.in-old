@@ -1,9 +1,11 @@
 <template>
   <div class="flex flex-col min-h-screen">
-    <NavBar class="pb-48" />
-    <section class="flex-grow mx-auto -mt-40 p-6">
-      <slot />
-    </section>
+    <NavBar class="pb-40" />
+    <div class="flex-grow -mt-40 p-4">
+      <section class="container mx-auto p-6 shadow-lg rounded-lg bg-white">
+        <slot />
+      </section>
+    </div>
     <Footer />
   </div>
 </template>
