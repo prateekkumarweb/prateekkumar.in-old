@@ -5,7 +5,7 @@ importScripts(
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
   workbox.routing.registerRoute(
-    new RegExp(".*"),
+    new RegExp("/"),
     new workbox.strategies.NetworkFirst()
   );
 } else {

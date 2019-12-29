@@ -21,7 +21,11 @@ module.exports = {
     "g-image",
     "g-image--lazy",
     "g-image--loaded",
-    "svg-inline--fa"
+    "svg-inline--fa",
+    "table",
+    "tr",
+    "th",
+    "td"
   ],
   whitelistPatterns: [/fa-[^ ]*/],
   extractors: [

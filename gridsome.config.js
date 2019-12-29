@@ -40,7 +40,7 @@ module.exports = {
       externalLinksTarget: "_blank",
       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
       anchorClassName: "fas fa-link",
-      plugins: ["@gridsome/remark-prismjs"]
+      plugins: ["remark-emoji", "@gridsome/remark-prismjs"]
     }
   }
 };

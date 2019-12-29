@@ -13,7 +13,7 @@
     </div>
 
     <Section title="Posts">
-      <div class="markdown" v-html="$page.post.content"></div>
+      <div class="markdown px-4" v-html="$page.post.content"></div>
     </Section>
 
     <div id="comments"></div>

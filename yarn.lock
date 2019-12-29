@@ -7864,6 +7864,14 @@ remark-autolink-headings@^5.0.0:
     extend "^3.0.2"
     unist-util-visit "^1.0.1"
 
+remark-emoji@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/remark-emoji/-/remark-emoji-2.0.2.tgz#49c134021132c192ee4cceed1988ec9b8ced7eb8"
+  integrity sha512-E8ZOa7Sx1YS9ivWJ8U9xpA8ldzZ4VPAfyUaKqhr1/Pr5Q8ZdQHrpDg6S+rPzMw8t89KNViB/oG9ZdJSFDrUXpA==
+  dependencies:
+    node-emoji "^1.8.1"
+    unist-util-visit "^1.4.0"
+
 remark-external-links@^3.0.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/remark-external-links/-/remark-external-links-3.1.1.tgz#a8d2aead51639daffae5e2255469fce4a86c09bb"
