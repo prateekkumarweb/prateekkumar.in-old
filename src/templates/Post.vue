@@ -15,6 +15,8 @@
     <Section title="Posts">
       <div class="markdown" v-html="$page.post.content"></div>
     </Section>
+
+    <div id="comments"></div>
   </Layout>
 </template>
 
@@ -41,6 +43,15 @@ export default {
         window.MathJax.typeset();
       }
     });
+    const script = document.createElement("script");
+    script.src = "https://utteranc.es/client.js";
+    script.setAttribute("repo", "prateekkumarweb/prateekkumar.in-comments");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("label", "comments");
+    script.setAttribute("theme", "github-light");
+    script.crossOrigin = "anonymous";
+    script.async = true;
+    document.getElementById("comments").appendChild(script);
   }
 };
 </script>

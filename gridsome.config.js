@@ -11,7 +11,7 @@ module.exports = {
   siteDescription: "Developer | Rust and JavaScript | WebAssembly Enthusiast",
   titleTemplate: "%s",
   templates: {
-    Post: "/blog/:title"
+    Post: "/:year/:month/:title"
   },
   css: {
     loaderOptions: {
