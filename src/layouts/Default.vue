@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen bg-gray-200">
     <NavBar class="pb-40" />
     <div class="flex-grow -mt-40 p-4">
       <section class="container mx-auto p-6 shadow-lg rounded-lg bg-white">

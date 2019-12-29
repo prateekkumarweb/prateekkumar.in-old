@@ -11,7 +11,8 @@ module.exports = {
   siteDescription: "Developer | Rust and JavaScript | WebAssembly Enthusiast",
   titleTemplate: "%s",
   templates: {
-    Post: "/:year/:month/:title"
+    Post: "/:year/:month/:title",
+    Tag: "/tags/:id"
   },
   css: {
     loaderOptions: {
@@ -31,7 +32,13 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         path: "content/posts/**/*.md",
-        typeName: "Post"
+        typeName: "Post",
+        refs: {
+          tags: {
+            typeName: "Tag",
+            create: true
+          }
+        }
       }
     }
   ],

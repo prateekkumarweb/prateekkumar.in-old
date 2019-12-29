@@ -12,9 +12,18 @@
       </div>
     </div>
 
-    <Section title="Posts">
-      <div class="markdown px-4" v-html="$page.post.content"></div>
-    </Section>
+    <div class="markdown px-4" v-html="$page.post.content"></div>
+
+    <div class="ml-4">
+      <a
+        v-for="tag in $page.post.tags"
+        :href="'/tags/' + tag.id"
+        :key="tag.id"
+        class="inline-block bg-gray-400 px-2 mr-1 rounded-l-full rounded-r-full"
+      >
+        #{{ tag.id }}
+      </a>
+    </div>
 
     <div id="comments"></div>
   </Layout>
@@ -28,6 +37,9 @@
       content
       date
       image
+      tags {
+        id
+      }
     }
   }
 </page-query>
@@ -58,9 +70,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-post h1 {
-  font-size: 2rem;
-}
-</style>

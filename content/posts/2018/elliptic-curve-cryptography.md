@@ -2,11 +2,11 @@
 date: 2018-06-02
 image: https://static.prateekkumar.in/img/posts/elliptic-curve.png
 tags:
-  - ECC
-  - Cryptography
-  - Security
-  - Encryption
-  - Decryption
+  - ecc
+  - cryptography
+  - security
+  - encryption
+  - decryption
 ---
 
 # Public Key Cryptography using Elliptic Curves
