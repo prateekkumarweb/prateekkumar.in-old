@@ -25,6 +25,16 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome", FontAwesomeIcon);
 
+  head.meta.push({
+    name: "theme-color",
+    content: "#123456"
+  });
+
+  head.link.push({
+    rel: "manifest",
+    href: "/manifest.json"
+  });
+
   head.link.push({
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
