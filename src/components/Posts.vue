@@ -13,14 +13,7 @@
           </div>
           <p class="markdown" v-html="getExcerpt(edge.node.content)"></p>
           <div>
-            <a
-              v-for="tag in edge.node.tags"
-              :href="'/tags/' + tag.id"
-              :key="tag.id"
-              class="inline-block bg-gray-400 px-2 mr-1 rounded-l-full rounded-r-full"
-            >
-              #{{ tag.id }}
-            </a>
+            <Tags :tags="edge.node.tags" />
           </div>
         </div>
       </li>
@@ -30,10 +23,11 @@
 
 <script>
 import Section from "~/components/home/Section";
+import Tags from "~/components/Tags";
 
 export default {
   props: ["posts"],
-  components: { Section },
+  components: { Section, Tags },
   methods: {
     getExcerpt(content) {
       const startIndex = content.indexOf("<p>");

@@ -14,16 +14,7 @@
 
     <div class="markdown px-4" v-html="$page.post.content"></div>
 
-    <div class="ml-4">
-      <a
-        v-for="tag in $page.post.tags"
-        :href="'/tags/' + tag.id"
-        :key="tag.id"
-        class="inline-block bg-gray-400 px-2 mr-1 rounded-l-full rounded-r-full"
-      >
-        #{{ tag.id }}
-      </a>
-    </div>
+    <Tags :tags="$page.post.tags" class="ml-4" />
 
     <div id="comments"></div>
   </Layout>
@@ -45,13 +36,15 @@
 </page-query>
 
 <script>
+import Tags from "~/components/Tags";
+
 export default {
   metaInfo() {
     return {
       title: `${this.$page.post.title} | Prateek Kumar | Developer`
     };
   },
-  components: {},
+  components: { Tags },
   mounted() {
     this.$nextTick(function() {
       if (window.MathJax) {
