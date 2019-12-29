@@ -4,7 +4,7 @@
   >
     <div class="my-3 flex flex-col sm:flex-row items-baseline">
       <div class="md:mr-3 mb-1">
-        <a href="/" class="text-2xl">Prateek Kumar</a>
+        <g-link to="/" class="text-2xl">Prateek Kumar</g-link>
       </div>
       <nav class="self-center mb-1">
         <ul class="flex text-xl">

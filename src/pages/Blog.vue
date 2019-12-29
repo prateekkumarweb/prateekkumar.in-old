@@ -7,7 +7,9 @@
           :key="edge.node.id"
           class="py-4"
         >
-          <a :href="edge.node.path" class="link">{{ edge.node.title }}</a>
+          <g-link :to="edge.node.path" class="link">
+            {{ edge.node.title }}
+          </g-link>
           <p>{{ edge.node.excerpt }}</p>
           <span>{{ edge.node.date.substring(0, 10) }}</span>
         </li>
