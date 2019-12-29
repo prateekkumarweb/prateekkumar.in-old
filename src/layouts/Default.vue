@@ -4,6 +4,12 @@
     <div class="flex-grow -mt-40 p-4">
       <section class="container mx-auto p-6 shadow-lg rounded-lg bg-white">
         <div
+          v-if="$page && $page.post && $page.post.image"
+          class="-mx-6 -mt-6 -mb-16 md:-mb-6"
+        >
+          <g-image :src="$page.post.image" class="w-full rounded-t-lg" />
+        </div>
+        <div
           class="flex flex-col md:flex-row border-b-2 border-gray-400 pb-6 mb-4 items-center"
         >
           <g-image

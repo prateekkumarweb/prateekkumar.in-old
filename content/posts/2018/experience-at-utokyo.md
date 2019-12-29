@@ -1,5 +1,6 @@
 ---
 date: 2018-10-05
+image: https://static.prateekkumar.in/img/posts/utokyo.jpg
 tags:
   - UTokyo
   - Internship

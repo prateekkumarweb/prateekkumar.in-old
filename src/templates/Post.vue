@@ -27,6 +27,7 @@
       title
       content
       date
+      image
     }
   }
 </page-query>
