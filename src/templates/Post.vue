@@ -33,8 +33,10 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: "Prateek Kumar | Developer"
+  metaInfo() {
+    return {
+      title: `${this.$page.post.title} | Prateek Kumar | Developer`
+    };
   },
   components: {},
   mounted() {

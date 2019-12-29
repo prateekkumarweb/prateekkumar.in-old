@@ -40,8 +40,7 @@ import Section from "~/components/home/Section";
 
 export default {
   metaInfo: {
-    title:
-      "Prateek Kumar | Developer | Rust and JavaScript | WebAssembly Enthusiast"
+    title: "Blog | Prateek Kumar | Developer"
   },
   components: { Section }
 };
