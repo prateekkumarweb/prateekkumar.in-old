@@ -22,13 +22,13 @@ I was interning under [Prof. Reiji Suda](http://olab.is.s.u-tokyo.ac.jp/~reiji/)
 
 The IJEP gave an amount of 240,000 yen as the scholarship (excluding flight tickets). The scholarship is not provided at once but in three instalments. The first one was given after around 20 days of our stay. IJEP also took us to a plant of **DMG Mori** at Nagoya. I got to travel on the **Shinkansen** (bullet train). The IJEP were kind to pay for the entire trip to Nagoya. Later, we visited **TCS (Tata Consultancy Services) Office** in Tokyo. The IJEP also organized a traditional Japanese Tea ceremony (Green tea with sweets).
 
-![May Fest @ UTokyo](https://cdn.hashnode.com/res/hashnode/image/upload/v1577385872081/KlgoZsO48.jpeg)
-![May Fest @ UTokyo](https://cdn.hashnode.com/res/hashnode/image/upload/v1577385883154/nKBKR7CFR.jpeg)
-![May Fest @ UTokyo](https://cdn.hashnode.com/res/hashnode/image/upload/v1577385901884/qgbA6zWVT.jpeg)
-![Tea ceremony @ UTokyo](https://cdn.hashnode.com/res/hashnode/image/upload/v1577385935474/l8Ez2njxP.jpeg)
-![Shinkansen (Bullet train)](https://cdn.hashnode.com/res/hashnode/image/upload/v1577385990072/LXkDd9tSo.jpeg)
-![DMG Mori, Nagoya](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386008490/On6zT5l_8.jpeg)
-![Final Presentation](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386035783/6aZBkxRxp.jpeg)
+![May Fest @ UTokyo](https://static.prateekkumar.in/img/internship/mayfest1.jpg)
+![May Fest @ UTokyo](https://static.prateekkumar.in/img/internship/mayfest2.jpg)
+![May Fest @ UTokyo](https://static.prateekkumar.in/img/internship/mayfest3.jpg)
+![Tea ceremony @ UTokyo](https://static.prateekkumar.in/img/internship/teaceremony.jpg)
+![Shinkansen (Bullet train)](https://static.prateekkumar.in/img/internship/shinkansen.jpg)
+![DMG Mori, Nagoya](https://static.prateekkumar.in/img/internship/dmgmori.jpg)
+![Final Presentation](https://static.prateekkumar.in/img/internship/final.jpg)
 
 ## Accommodation and Moving around
 
@@ -40,25 +40,25 @@ The University of Tokyo, Hongo Campus was around 2.5 km away from Tabata. Most o
 
 Being a lover of Indian cuisine, I faced difficulty adjusting to Japanese taste. Most of the time, I had food at Indian restaurants. I didn't bring anything from India to cook. (If you are a vegetarian, I would suggest bringing some ingredients that you can cook here. It will save you money.) The food was a little costly. It was not difficult to find Indian restaurants in Tokyo. For breakfasts, I used to eat bread (bought from one of the convenient stores). Sometimes I used to eat at Subway inside the campus for lunch. For dinner, I used to eat at Indian restaurants. I also had Japanese curry rice at **CoCo curry** sometimes. I also ate sushi, ramen and miso soup during my stay in Tokyo.
 
-![Japanese Curry at CoCo Ichibaniya](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386121763/1KNyuUiBV.jpeg)
-![Lunch @ DMG Mori, Nagoya](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386136363/zttHxJNlm.jpeg)
+![Japanese Curry at CoCo Ichibaniya](https://static.prateekkumar.in/img/internship/curry.jpg)
+![Lunch @ DMG Mori, Nagoya](https://static.prateekkumar.in/img/internship/dmgmorilunch.jpg)
 
 ## Places visited
 
 There are many places to see in Tokyo. I spent most of my weekends travelling and visiting sites. Some of the places I visited are **Tokyo Tower**, **Tokyo Skytree**, **Enoshima Island**, **Zōjō-ji** (Buddhist temple near Tokyo Tower), **Meiji Jingu** (Shinto shrine dedicated to Emperor Meiji), **Nokogiriyama** (If you like nature and quiet place, this is one of the places to visit.), **Inokashira Park**, **Yoyogi Park**, **Ueno zoo**, **Kahaku** (National Museum of Nature and Science), **Omiya Railway Museum**, **Omiya Bonsai Museum**. For shopping, there are **Don Quijote** stores at **Shibuya** and **Shinjuku**. Shibuya has the busiest crossing in Japan. There is a bronze statue of **Hachiko** at Shibuya. **Akihabara** is a great place for buying electronics.
 
-![Akihabara](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386166584/dTzUNdPf5.jpeg)
-![Shibuya](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386186995/PzW0nZRXT.jpeg)
-![Meiji Shrine](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386205149/7urNCwH9a.jpeg)
-![Yoyogi Park](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386219103/6wp61ZpOF.jpeg)
-![Zojo-ji (Buddhist temple)](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386235679/DApzbm_Hs.jpeg)
-![View of the Hell at Nokogiriyama](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386261856/R470YM8Ca.jpeg)
-![Buddha at Nokogiriyama](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386278728/c35bRu9_6.jpeg)
-![Skytree](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386301369/5aOAQvvqm.jpeg)
-![Tokyo Tower](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386362069/JbsKxhGHW.jpeg)
-![Enoshima Island](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386339959/usLiN3x2J.jpeg)
-![Fuji-san as seen from Lighthouse, Enoshima](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386379847/GfcpIxcrs.jpeg)
-![Bonsai](https://cdn.hashnode.com/res/hashnode/image/upload/v1577386395877/qgB4hr6Yx.jpeg)
+![Akihabara](https://static.prateekkumar.in/img/internship/akihabara.jpg)
+![Shibuya](https://static.prateekkumar.in/img/internship/shibuya.jpg)
+![Meiji Shrine](https://static.prateekkumar.in/img/internship/meijishrine.jpg)
+![Yoyogi Park](https://static.prateekkumar.in/img/internship/yoyogipark.jpg)
+![Zojo-ji (Buddhist temple)](https://static.prateekkumar.in/img/internship/zojoji.jpg)
+![View of the Hell at Nokogiriyama](https://static.prateekkumar.in/img/internship/nokogiri.jpg)
+![Buddha at Nokogiriyama](https://static.prateekkumar.in/img/internship/nokogiribuddha.jpg)
+![Skytree](https://static.prateekkumar.in/img/internship/skytreeview.jpg)
+![Tokyo Tower](https://static.prateekkumar.in/img/internship/tokyotower.jpg)
+![Enoshima Island](https://static.prateekkumar.in/img/internship/enoshima.jpg)
+![Fuji-san as seen from Lighthouse, Enoshima](https://static.prateekkumar.in/img/internship/fujisan.jpg)
+![Bonsai](https://static.prateekkumar.in/img/internship/bonsai.jpg)
 
 ## Conclusion
 
