@@ -69,6 +69,10 @@
 .markdown table {
   @apply mb-6;
 }
+
+.markdown p code {
+  @apply px-1 bg-gray-200;
+}
 /* purgecss end ignore */
 
 html {
