@@ -286,8 +286,8 @@ In `static/index.html` file, replace all of its content with the following code.
       <div class="flex whitespace-no-wrap pr-6">
         <div class="border-2 border-gray-800">
           <div class="p-2">
-            <div class="inline-block">
-              <div class="p-1">
+            <div class="">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -307,7 +307,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="px-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -327,69 +327,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="p-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="inline-block">
-              <div class="p-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-              <div class="px-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-              <div class="p-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -410,8 +348,8 @@ In `static/index.html` file, replace all of its content with the following code.
                 </div>
               </div>
             </div>
-            <div class="inline-block">
-              <div class="p-1">
+            <div class="-my-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -431,7 +369,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="px-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -451,7 +389,69 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="p-1">
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -474,8 +474,8 @@ In `static/index.html` file, replace all of its content with the following code.
             </div>
           </div>
           <div class="px-2">
-            <div class="inline-block">
-              <div class="p-1">
+            <div class="">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -495,7 +495,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="px-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -515,69 +515,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="p-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="inline-block">
-              <div class="p-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-              <div class="px-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-              <div class="p-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -598,8 +536,8 @@ In `static/index.html` file, replace all of its content with the following code.
                 </div>
               </div>
             </div>
-            <div class="inline-block">
-              <div class="p-1">
+            <div class="-my-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -619,7 +557,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="px-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -639,7 +577,69 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="p-1">
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -662,8 +662,8 @@ In `static/index.html` file, replace all of its content with the following code.
             </div>
           </div>
           <div class="p-2">
-            <div class="inline-block">
-              <div class="p-1">
+            <div class="">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -683,7 +683,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="px-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -703,69 +703,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="p-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="inline-block">
-              <div class="p-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-              <div class="px-1">
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-                <div class="inline-block">
-                  <input
-                    type="number"
-                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
-                  />
-                </div>
-              </div>
-              <div class="p-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -786,8 +724,8 @@ In `static/index.html` file, replace all of its content with the following code.
                 </div>
               </div>
             </div>
-            <div class="inline-block">
-              <div class="p-1">
+            <div class="-my-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -807,7 +745,7 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="px-1">
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
@@ -827,7 +765,69 @@ In `static/index.html` file, replace all of its content with the following code.
                   />
                 </div>
               </div>
-              <div class="p-1">
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+              <div class="p-1 inline-block">
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+                <div class="inline-block">
+                  <input
+                    type="number"
+                    class="w-12 h-12 px-2 py-1 text-2xl text-center border-2 border-black"
+                  />
+                </div>
+              </div>
+              <div class="p-1 inline-block">
                 <div class="inline-block">
                   <input
                     type="number"
