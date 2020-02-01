@@ -2,7 +2,7 @@
   <footer class="bg-gray-900 text-gray-300 px-auto py-12 text-center">
     <p>
       <strong class="has-text-white"
-        >&copy; 2019 {{ $static.metadata.siteName }}.</strong
+        >&copy; 2020 {{ $static.metadata.siteName }}.</strong
       >
       The source code for this website is licensed under
       <a
