@@ -1,5 +1,10 @@
 <template>
   <Layout>
+    <Section title="Projects">
+      <p>Some of the interesting things that I have built/contributed to.</p>
+      <ProjectList />
+    </Section>
+
     <Section title="Education">
       <ul>
         <li>
@@ -17,6 +22,11 @@
 
     <Section title="Publications">
       <PublicationList />
+      <a
+        href="https://scholar.google.co.in/citations?user=M1NFyhAAAAAJ&hl=en"
+        class="bg-primary hover:bg-white hover:text-primary border-primary border-2 inline-block text-white font-semibold rounded py-1 px-3 mt-4"
+        >Google Scholar</a
+      >
     </Section>
 
     <Section title="Contact">
@@ -36,6 +46,7 @@
 import Section from "~/components/home/Section";
 import PublicationItem from "~/components/home/PublicationItem";
 import PublicationList from "~/components/home/PublicationList";
+import ProjectList from "~/components/home/ProjectList";
 
 export default {
   metaInfo: {
@@ -44,7 +55,8 @@ export default {
   components: {
     Section,
     PublicationItem,
-    PublicationList
+    PublicationList,
+    ProjectList
   }
 };
 </script>

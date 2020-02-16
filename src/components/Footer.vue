@@ -4,7 +4,13 @@
       <strong class="has-text-white"
         >&copy; 2020 {{ $static.metadata.siteName }}.</strong
       >
-      The source code for this website is licensed under
+      The
+      <a
+        class="link text-white"
+        href="https://github.com/prateekkumarweb/prateekkumar.in"
+        >source code</a
+      >
+      for this website is licensed under
       <a
         class="link text-white"
         href="https://opensource.org/licenses/mit-license.php"

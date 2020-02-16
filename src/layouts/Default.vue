@@ -25,11 +25,6 @@
             <p class="text-base">
               {{ $static.metadata.siteDescription }}
             </p>
-            <!-- <g-link
-              to="/blog/"
-              class="bg-primary hover:bg-white hover:text-primary border-primary border-2 inline-block text-white font-semibold rounded py-1 px-3 mt-4"
-              >Go to my blog</g-link
-            > -->
           </div>
         </div>
         <slot />
@@ -47,12 +42,6 @@
     }
   }
 </static-query>
-
-<style lang="scss" scoped>
-.has-text-underline {
-  text-decoration: underline;
-}
-</style>
 
 <script>
 import NavBar from "~/components/NavBar.vue";

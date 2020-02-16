@@ -10,7 +10,8 @@ import {
 import {
   faEnvelope,
   faLink,
-  faArrowLeft
+  faArrowLeft,
+  faBook
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
@@ -18,7 +19,15 @@ import "~/main.scss";
 import DefaultLayout from "~/layouts/Default.vue";
 
 config.autoAddCss = false;
-library.add(faGithub, faTwitter, faLinkedin, faEnvelope, faLink, faArrowLeft);
+library.add(
+  faGithub,
+  faTwitter,
+  faLinkedin,
+  faEnvelope,
+  faLink,
+  faArrowLeft,
+  faBook
+);
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
