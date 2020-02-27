@@ -1,5 +1,11 @@
 @import "prism.css";
 
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
+}
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
@@ -75,8 +81,13 @@
 }
 /* purgecss end ignore */
 
+@font-face {
+  font-family: "Cascadia Code";
+  src: url(/Cascadia.ttf);
+}
+
 html {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .icon-button {
