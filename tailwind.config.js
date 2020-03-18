@@ -2,8 +2,8 @@ module.exports = {
   important: true,
   theme: {
     fontFamily: {
-      display: ["Noto Sans TC", "sans-serif"],
-      body: ["Noto Sans TC", "sans-serif"]
+      display: ["Noto Sans", "sans-serif"],
+      body: ["Noto Sans", "sans-serif"]
     },
     extend: {
       colors: {
