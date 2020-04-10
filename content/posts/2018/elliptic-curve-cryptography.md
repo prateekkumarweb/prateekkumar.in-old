@@ -1,6 +1,6 @@
 ---
 date: 2018-06-02
-image: https://static.prateekkumar.in/img/posts/elliptic-curve.png
+image: img/posts/elliptic-curve.png
 tags:
   - ecc
   - cryptography

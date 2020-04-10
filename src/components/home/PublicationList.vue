@@ -1,12 +1,7 @@
 <template>
   <ul>
     <li class="pb-3" v-for="pub in publications" :key="pub.title">
-      <PublicationItem
-        :title="pub.title"
-        :authors="pub.authors"
-        :conf="pub.conf"
-        :pdf="pub.pdf"
-      />
+      <PublicationItem :title="pub.title" :authors="pub.authors" :conf="pub.conf" :pdf="pub.pdf" />
     </li>
   </ul>
 </template>

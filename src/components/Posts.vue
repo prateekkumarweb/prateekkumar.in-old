@@ -4,12 +4,12 @@
       <li v-for="edge in posts" :key="edge.node.id" class="p-4">
         <div>
           <div class="flex justify-between flex-wrap">
-            <g-link :to="edge.node.path" class="link text-xl">
-              {{ edge.node.title }}
-            </g-link>
-            <span class="text-gray-700">{{
-              edge.node.date.substring(0, 10)
-            }}</span>
+            <g-link :to="edge.node.path" class="link text-xl">{{
+              edge.node.title
+            }}</g-link>
+            <span class="text-gray-700">
+              {{ edge.node.date.substring(0, 10) }}
+            </span>
           </div>
           <p class="markdown" v-html="getExcerpt(edge.node.content)"></p>
           <div>

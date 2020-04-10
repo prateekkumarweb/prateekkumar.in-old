@@ -2,16 +2,15 @@
   <div>
     {{ authors.join(", ") }}
     <br />
-    <strong>{{ title }}.</strong>&nbsp; <em>{{ conf }}</em
-    >&nbsp;
+    <strong>{{ title }}.</strong>&nbsp;
+    <em>{{ conf }}</em>&nbsp;
     <a
       v-if="pdf"
       :href="pdf"
       class="link"
       target="_blank"
       rel="nofollow noopener noreferrer"
-      >PDF</a
-    >
+    >PDF</a>
   </div>
 </template>
 

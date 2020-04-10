@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="max-w-sm flex flex-col rounded-lg bg-gray-200 shadow p-3 mt-3 mr-3"
-  >
+  <div class="max-w-sm flex flex-col rounded-lg bg-gray-200 shadow p-3 mt-3 mr-3">
     <h3 class="font-bold text-lg">{{ title }}</h3>
     <p class="py-2">{{ desc }}</p>
     <div class="flex-grow"></div>
@@ -12,8 +10,7 @@
           :class="{ 'hover:underline': licenseUrl }"
           class="bg-green-600 p-1 text-xs text-white font-bold rounded"
           :href="licenseUrl"
-          >{{ licenseText }}</a
-        >
+        >{{ licenseText }}</a>
       </div>
       <div class="flex-grow"></div>
       <div>

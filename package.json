@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "lint": "eslint src/**/*.vue src/**/*.js --fix"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
