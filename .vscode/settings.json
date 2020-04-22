@@ -1,0 +1,13 @@
+{
+    "vetur.validation.template": false,
+    "eslint.validate": [
+        "vue",
+        "html",
+        "javascript"
+    ],
+    "vetur.format.defaultFormatter.html": "none",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
