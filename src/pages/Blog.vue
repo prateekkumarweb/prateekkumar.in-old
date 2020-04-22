@@ -29,8 +29,8 @@ import Posts from "~/components/Posts";
 
 export default {
   metaInfo: {
-    title: "Blog | Prateek Kumar | Developer"
+    title: "Blog | Prateek Kumar | Developer",
   },
-  components: { Posts }
+  components: { Posts },
 };
 </script>

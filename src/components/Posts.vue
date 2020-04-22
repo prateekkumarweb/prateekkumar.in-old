@@ -37,7 +37,7 @@ export default {
       }
       const excerpt = content.substring(startIndex + 3, endIndex) + "...";
       return excerpt;
-    }
-  }
+    },
+  },
 };
 </script>

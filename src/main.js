@@ -5,13 +5,13 @@ import { config, library } from "@fortawesome/fontawesome-svg-core";
 import {
   faGithub,
   faTwitter,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faLink,
   faArrowLeft,
-  faBook
+  faBook,
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
@@ -29,29 +29,29 @@ library.add(
   faBook
 );
 
-export default function(Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome", FontAwesomeIcon);
 
   head.meta.push({
     name: "theme-color",
-    content: "#123456"
+    content: "#123456",
   });
 
   head.link.push({
     rel: "manifest",
-    href: "/manifest.json"
+    href: "/manifest.json",
   });
 
   head.link.push({
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
+    href: "https://fonts.googleapis.com/css?family=Noto+Sans&display=swap",
   });
 
   head.script.push({
     src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
     body: true,
-    async: true
+    async: true,
   });
 }

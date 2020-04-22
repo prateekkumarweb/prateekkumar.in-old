@@ -50,13 +50,13 @@ import ProjectList from "~/components/home/ProjectList";
 
 export default {
   metaInfo: {
-    title: "Prateek Kumar | Developer | Rust and JavaScript"
+    title: "Prateek Kumar | Developer | Rust and JavaScript",
   },
   components: {
     Section,
     PublicationItem,
     PublicationList,
-    ProjectList
-  }
+    ProjectList,
+  },
 };
 </script>

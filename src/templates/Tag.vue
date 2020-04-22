@@ -41,9 +41,9 @@ import Posts from "~/components/Posts";
 export default {
   metaInfo() {
     return {
-      title: `Tag - #${this.$page.tag.id} | Prateek Kumar | Developer`
+      title: `Tag - #${this.$page.tag.id} | Prateek Kumar | Developer`,
     };
   },
-  components: { Posts }
+  components: { Posts },
 };
 </script>

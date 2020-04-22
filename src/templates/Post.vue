@@ -41,12 +41,12 @@ import Tags from "~/components/Tags";
 export default {
   metaInfo() {
     return {
-      title: `${this.$page.post.title} | Prateek Kumar | Developer`
+      title: `${this.$page.post.title} | Prateek Kumar | Developer`,
     };
   },
   components: { Tags },
   mounted() {
-    this.$nextTick(function() {
+    this.$nextTick(function () {
       if (window.MathJax) {
         window.MathJax.typeset();
       }
@@ -60,6 +60,6 @@ export default {
     script.crossOrigin = "anonymous";
     script.async = true;
     document.getElementById("comments").appendChild(script);
-  }
+  },
 };
 </script>

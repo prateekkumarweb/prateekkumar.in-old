@@ -1,10 +1,11 @@
 const tailwind = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
-const purgecss = require("@fullhuman/postcss-purgecss");
 
 const postcssPlugins = [tailwind(), autoprefixer()];
 
-if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
+// TODO: (For now, disabling purgecss as extractors are not working)
+// const purgecss = require("@fullhuman/postcss-purgecss");
+// if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 
 module.exports = {
   siteName: "Prateek Kumar",
