@@ -3,31 +3,27 @@ const autoprefixer = require("autoprefixer");
 
 const postcssPlugins = [tailwind(), autoprefixer()];
 
-// TODO: (For now, disabling purgecss as extractors are not working)
-// const purgecss = require("@fullhuman/postcss-purgecss");
-// if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
-
 module.exports = {
   siteName: "Prateek Kumar",
   siteDescription: "Developer | Rust and JavaScript | WebAssembly Enthusiast",
   titleTemplate: "%s",
   templates: {
     Post: "/:year/:month/:title",
-    Tag: "/tags/:id"
+    Tag: "/tags/:id",
   },
   css: {
     loaderOptions: {
       postcss: {
-        plugins: postcssPlugins
-      }
-    }
+        plugins: postcssPlugins,
+      },
+    },
   },
   plugins: [
     {
       use: "@gridsome/plugin-google-analytics",
       options: {
-        id: "UA-89128710-1"
-      }
+        id: "UA-89128710-1",
+      },
     },
     {
       use: "@gridsome/source-filesystem",
@@ -37,18 +33,18 @@ module.exports = {
         refs: {
           tags: {
             typeName: "Tag",
-            create: true
-          }
-        }
-      }
-    }
+            create: true,
+          },
+        },
+      },
+    },
   ],
   transformers: {
     remark: {
       externalLinksTarget: "_blank",
       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
       anchorClassName: "fas fa-link",
-      plugins: ["remark-emoji", "@gridsome/remark-prismjs"]
-    }
-  }
+      plugins: ["remark-emoji", "@gridsome/remark-prismjs"],
+    },
+  },
 };

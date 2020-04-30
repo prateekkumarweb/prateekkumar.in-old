@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap">
+  <div>
     <ProjectItem
       v-for="proj in projects"
       :key="proj.title"
@@ -18,9 +18,9 @@ import ProjectItem from "~/components/home/ProjectItem";
 
 export default {
   components: {
-    ProjectItem
+    ProjectItem,
   },
-  data: function() {
+  data: function () {
     return {
       projects: [
         {
@@ -30,7 +30,7 @@ export default {
           github: "https://github.com/sbjoshi/Open-WBO-Inc",
           licenseText: "MIT",
           licenseUrl:
-            "https://github.com/sbjoshi/Open-WBO-Inc/blob/master/LICENSE"
+            "https://github.com/sbjoshi/Open-WBO-Inc/blob/master/LICENSE",
         },
         {
           title: "UTVPI-OA",
@@ -39,7 +39,7 @@ export default {
           github: "https://github.com/IITH-Compilers/UTVPI-OA",
           licenseText: "BSD-3-Clause",
           licenseUrl:
-            "https://github.com/IITH-Compilers/UTVPI-OA/blob/master/LICENSE"
+            "https://github.com/IITH-Compilers/UTVPI-OA/blob/master/LICENSE",
         },
         {
           title: "Timetabler",
@@ -49,7 +49,7 @@ export default {
           docs: "https://timetabler.readthedocs.io/",
           licenseText: "MIT",
           licenseUrl:
-            "https://github.com/sukrutrao/Timetabler/blob/master/LICENSE"
+            "https://github.com/sukrutrao/Timetabler/blob/master/LICENSE",
         },
         {
           title: "Autojudge",
@@ -58,10 +58,11 @@ export default {
           github: "https://github.com/vbsinha/autojudge",
           docs: "https://autojudge.readthedocs.io/",
           licenseText: "MIT",
-          licenseUrl: "https://github.com/vbsinha/autojudge/blob/master/LICENSE"
-        }
-      ]
+          licenseUrl:
+            "https://github.com/vbsinha/autojudge/blob/master/LICENSE",
+        },
+      ],
     };
-  }
+  },
 };
 </script>

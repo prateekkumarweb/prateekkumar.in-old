@@ -1,7 +1,12 @@
 <template>
   <ul>
     <li class="pb-3" v-for="pub in publications" :key="pub.title">
-      <PublicationItem :title="pub.title" :authors="pub.authors" :conf="pub.conf" :pdf="pub.pdf" />
+      <PublicationItem
+        :title="pub.title"
+        :authors="pub.authors"
+        :conf="pub.conf"
+        :pdf="pub.pdf"
+      />
     </li>
   </ul>
 </template>
@@ -11,9 +16,9 @@ import PublicationItem from "~/components/home/PublicationItem";
 
 export default {
   components: {
-    PublicationItem
+    PublicationItem,
   },
-  data: function() {
+  data: function () {
     return {
       publications: [
         {
@@ -23,11 +28,11 @@ export default {
             "Saurabh Joshi",
             "Prateek Kumar",
             "Sukrut Rao",
-            "Ruben Martins"
+            "Ruben Martins",
           ],
           conf: "JSAT 2019 (vol. 11)",
           pdf:
-            "https://content.iospress.com/download/journal-on-satisfiability-boolean-modeling-and-computation/sat190118?id=journal-on-satisfiability-boolean-modeling-and-computation%2Fsat190118"
+            "https://content.iospress.com/download/journal-on-satisfiability-boolean-modeling-and-computation/sat190118?id=journal-on-satisfiability-boolean-modeling-and-computation%2Fsat190118",
         },
         {
           title: "An analysis of executable size reduction by LLVM passes",
@@ -37,10 +42,10 @@ export default {
             "Prateek Kumar",
             "Vaibhav B. Sinha",
             "Suresh Purini",
-            "Ramakrishna Upadrasta"
+            "Ramakrishna Upadrasta",
           ],
           conf: "CSIT 2019",
-          pdf: "https://link.springer.com/article/10.1007%2Fs40012-019-00248-5"
+          pdf: "https://link.springer.com/article/10.1007%2Fs40012-019-00248-5",
         },
         {
           title: "Approximation Strategies for Incomplete MaxSAT",
@@ -48,14 +53,14 @@ export default {
             "Saurabh Joshi",
             "Prateek Kumar",
             "Ruben Martins",
-            "Sukrut Rao"
+            "Sukrut Rao",
           ],
           conf: "CP 2018",
           pdf:
-            "https://link.springer.com/content/pdf/10.1007/978-3-319-98334-9_15.pdf"
-        }
-      ]
+            "https://link.springer.com/content/pdf/10.1007/978-3-319-98334-9_15.pdf",
+        },
+      ],
     };
-  }
+  },
 };
 </script>

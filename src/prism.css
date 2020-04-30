@@ -4,7 +4,6 @@
  * @author Rose Pritchard
  */
 
-/* purgecss start ignore */
 code[class*="language-"],
 pre[class*="language-"] {
   color: #ccc;
@@ -120,4 +119,3 @@ pre[class*="language-"] {
 .token.inserted {
   color: green;
 }
-/* purgecss end ignore */

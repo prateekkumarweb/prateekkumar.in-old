@@ -9,9 +9,6 @@
       <nav class="self-center mb-1">
         <ul class="flex text-xl">
           <li class="mx-3">
-            <g-link to="/" class="hover:text-gray-400">Home</g-link>
-          </li>
-          <li class="mx-3">
             <g-link to="/blog/" class="hover:text-gray-400">Blog</g-link>
           </li>
         </ul>
