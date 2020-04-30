@@ -20,8 +20,9 @@
         class="link text-white"
         href="https://creativecommons.org/licenses/by-sa/4.0/"
         >CC BY SA 4.0</a
-      >. <br />Built using Vue.js, Tailwindcss, Gridsome. Deployed using
-      Netlify.
+      >. <br />
+      Deployed using
+      <a class="link text-white" href="https://www.netlify.com/">Netlify</a>.
     </p>
   </footer>
 </template>
