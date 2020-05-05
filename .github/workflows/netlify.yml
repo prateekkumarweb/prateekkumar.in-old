@@ -1,4 +1,7 @@
-on: push
+on:
+  push:
+    branches:
+      - master
 name: Publish on Netlify
 
 jobs:
@@ -8,10 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
       - name: Publish
-        uses: netlify/actions/build@master
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=dist --prod
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_CMD: npm run build
-          NETLIFY_DIR: dist
