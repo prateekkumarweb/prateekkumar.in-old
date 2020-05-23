@@ -321,6 +321,6 @@ This generates the output in the `dist` folder.
 
 ## Conclusion
 
-You can find the demo of this solver here: [https://sudoku-wasm.netlify.com/](https://sudoku-wasm.netlify.com/).
+You can find the demo of this solver here: [https://sudoku-wasm.netlify.app/](https://sudoku-wasm.netlify.app/).
 
 The source code is available on GitHub in the repository [@prateekkumarweb/sudoku-wasm](https://github.com/prateekkumarweb/sudoku-wasm) under MIT license.
