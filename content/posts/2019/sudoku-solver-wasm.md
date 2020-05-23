@@ -41,7 +41,7 @@ rsat = "=0.1.5"
 serde = { version = "1.0", features = ["derive"] }
 ```
 
-We enable `serde-serialize` feature in `wasm-bindgen` as that will be useful later to easily convert structs into `JsValue`. We will use `rsat` sat solver which I have created in my free time. You can find more about it [here](https://crates.io/crates/rsat). We will use a particular pinned version of `rsat` as there is a bug in the later versions which is yet to be fixed.
+We enable `serde-serialize` feature in `wasm-bindgen` as that will be useful later to easily convert structs into `JsValue`. We will use `rsat` sat solver which I have created in my free time. You can find more about it [here](https://crates.io/crates/rsat). We will use a particular pinned version of `rsat` as it is not yet stable and api may change anytime.
 
 Start the development server on port `8080` using the following command.
 
@@ -238,7 +238,7 @@ const initialGrid = [
   [3, 0, 0, 0, 4, 5, 0, 1, 8],
   [0, 0, 0, 0, 7, 0, 0, 0, 0],
   [7, 6, 0, 0, 2, 0, 0, 0, 0],
-  [0, 0, 8, 5, 0, 0, 3, 0, 4]
+  [0, 0, 8, 5, 0, 0, 3, 0, 4],
 ];
 
 const main = async () => {
@@ -271,11 +271,11 @@ const initialGrid = [
   [3, 0, 0, 0, 4, 5, 0, 1, 8],
   [0, 0, 0, 0, 7, 0, 0, 0, 0],
   [7, 6, 0, 0, 2, 0, 0, 0, 0],
-  [0, 0, 8, 5, 0, 0, 3, 0, 4]
+  [0, 0, 8, 5, 0, 0, 3, 0, 4],
 ];
 const inputs = document.querySelectorAll("input");
 
-const setGrid = grid => {
+const setGrid = (grid) => {
   for (let i = 0; i < 81; i++) {
     const div = (i / 9) >> 0;
     const rem = i % 9;
