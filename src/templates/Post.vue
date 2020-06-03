@@ -28,6 +28,7 @@
       content
       date
       image
+      path
       tags {
         id
       }
@@ -42,6 +43,28 @@ export default {
   metaInfo() {
     return {
       title: `${this.$page.post.title} | Prateek Kumar | Developer`,
+      script: [
+        {
+          innerHTML: JSON.stringify(
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              name: `${this.$page.post.title}`,
+              url: `https://prateekkumar.in/blog${this.$page.post.path}`,
+              author: {
+                "@type": "Person",
+                name: "Prateek Kumar",
+                url: "https://prateekkumar.in",
+              },
+              datePublished: `${this.$page.post.date}`,
+              headline: `${this.$page.post.title}`,
+            },
+            null,
+            2
+          ),
+          type: "application/ld+json",
+        },
+      ],
     };
   },
   components: { Tags },

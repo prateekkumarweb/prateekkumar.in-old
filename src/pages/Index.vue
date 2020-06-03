@@ -51,6 +51,37 @@ import ProjectList from "~/components/home/ProjectList";
 export default {
   metaInfo: {
     title: "Prateek Kumar | Developer | Rust and JavaScript",
+    script: [
+      {
+        innerHTML: JSON.stringify(
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            email: "prateek@prateekkumar.in",
+            name: "Prateek Kumar",
+            gender: "male",
+            image:
+              "https://gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=256",
+            url: "https://prateekkumar.in",
+            sameAs: [
+              "https://twitter.com/prateekkumarweb",
+              "https://github.com/prateekkumarweb",
+              "https://www.linkedin.com/in/prateekkumarweb",
+            ],
+            alumniOf: [
+              {
+                "@type": "CollegeOrUniversity",
+                name: "Indian Institute of Technology Hyderabad",
+                url: "https://iith.ac.in",
+              },
+            ],
+          },
+          null,
+          2
+        ),
+        type: "application/ld+json",
+      },
+    ],
   },
   components: {
     Section,

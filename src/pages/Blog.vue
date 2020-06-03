@@ -30,6 +30,21 @@ import Posts from "~/components/Posts";
 export default {
   metaInfo: {
     title: "Blog | Prateek Kumar | Developer",
+    script: [
+      {
+        innerHTML: JSON.stringify(
+          {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            name: "Blog | Prateek Kumar",
+            url: "https://prateekkumar.in/blog/",
+          },
+          null,
+          2
+        ),
+        type: "application/ld+json",
+      },
+    ],
   },
   components: { Posts },
 };
