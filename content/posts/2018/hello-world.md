@@ -1,4 +1,5 @@
 ---
+title: Hello, World!
 date: 2018-01-01
 tags:
   - hello
@@ -6,7 +7,9 @@ tags:
 
 # Hello, World!
 
-This is a reference post to see how markdown is styled.<!--more-->
+This is a reference post to see how markdown is styled.
+
+<!--more-->
 
 ## Headers
 
@@ -158,14 +161,14 @@ Emoji! :+1: :sparkles: :camel: :tada: :rocket: :smile: :panda_face: :first_quart
 ````md
 ```javascript
 function test() {
-  console.log("look ma’, no spaces");
+  console.log('look ma’, no spaces');
 }
 ```
 ````
 
 ```javascript
 function test() {
-  console.log("look ma’, no spaces");
+  console.log('look ma’, no spaces');
 }
 ```
 
