@@ -17,6 +17,9 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import "~/main.scss";
 import DefaultLayout from "~/layouts/Default.vue";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
+import VueDisqus from "vue-disqus";
 
 config.autoAddCss = false;
 library.add(
@@ -30,9 +33,23 @@ library.add(
 );
 
 export default function (Vue, { router, head, isClient }) {
+  NProgress.configure();
+  Vue.use(VueDisqus, { shortname: "prateekkumar" });
+
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   Vue.component("font-awesome", FontAwesomeIcon);
+
+  router.beforeEach((to, from, next) => {
+    if (from.name !== null) {
+      NProgress.start();
+    }
+    next();
+  });
+
+  router.afterEach((to, from) => {
+    NProgress.done();
+  });
 
   head.meta.push({
     name: "theme-color",

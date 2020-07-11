@@ -13,7 +13,7 @@ import Section from "~/components/home/Section";
 
 export default {
   metaInfo: {
-    title: "404 - Not Found | Prateek Kumar | Developer | Rust and JavaScript",
+    title: "404 - Not Found | Prateek Kumar | Developer",
   },
   components: {
     Section,

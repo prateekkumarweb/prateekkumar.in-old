@@ -5,7 +5,7 @@ const postcssPlugins = [tailwind(), autoprefixer()];
 
 module.exports = {
   siteName: "Prateek Kumar",
-  siteDescription: "Developer | Rust and JavaScript | WebAssembly Enthusiast",
+  siteDescription: "Developer | Rust and JavaScript",
   titleTemplate: "%s",
   templates: {
     Post: "/:year/:month/:title",
