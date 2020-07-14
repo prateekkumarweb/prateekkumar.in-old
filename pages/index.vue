@@ -48,7 +48,12 @@ import ProjectList from '~/components/home/ProjectList';
 import Section from '~/components/home/Section';
 
 export default {
-  metaInfo: {
+  components: {
+    Section,
+    PublicationList,
+    ProjectList,
+  },
+  head: {
     title: 'Prateek Kumar | Developer | Rust and JavaScript',
     script: [
       {
@@ -81,11 +86,6 @@ export default {
         type: 'application/ld+json',
       },
     ],
-  },
-  components: {
-    Section,
-    PublicationList,
-    ProjectList,
   },
 };
 </script>
