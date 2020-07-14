@@ -73,15 +73,19 @@ export default {
                 url: 'https://prateekkumar.in',
               },
               datePublished: `${this.post.date}`,
-              dateModifiled: `${this.post.updatedAt}`,
+              dateModified: `${this.post.updatedAt}`,
               headline: `${this.post.title}`,
               image: `https://prateekkumar.in${
                 this.post.image ?? '/images/profile.jpg'
               }`,
               publisher: {
-                '@type': 'Person',
+                '@type': 'Organization',
                 name: 'Prateek Kumar',
                 url: 'https://prateekkumar.in',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://prateekkumar.in/images/logo-192.png',
+                },
               },
               mainEntityOfPage:
                 'https://prateekkumar.in' + this.getUrl(this.post),
