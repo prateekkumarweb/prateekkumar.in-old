@@ -4,9 +4,9 @@
       <li v-for="post in posts" :key="post.path" class="p-4">
         <div>
           <div class="flex justify-between flex-wrap">
-            <nuxt-link :to="getUrl(post)" class="link text-xl">{{
+            <NuxtLink :to="getUrl(post)" class="link text-xl">{{
               post.title
-            }}</nuxt-link>
+            }}</NuxtLink>
             <span class="text-gray-700">
               {{ post.date.substring(0, 10) }}
             </span>
@@ -27,7 +27,7 @@ import Tags from '~/components/Tags';
 
 export default {
   components: { Section, Tags },
-  props: ['posts'],
+  props: { posts: { type: Array, required: true } },
   methods: {
     getUrl(post) {
       const date = new Date(post.date);

@@ -4,12 +4,12 @@
   >
     <div class="my-3 flex flex-col sm:flex-row items-baseline">
       <div class="md:mr-3 mb-1">
-        <nuxt-link to="/" class="text-2xl">Prateek Kumar</nuxt-link>
+        <NuxtLink to="/" class="text-2xl">Prateek Kumar</NuxtLink>
       </div>
       <nav class="self-center mb-1">
         <ul class="flex text-xl">
           <li class="mx-3">
-            <nuxt-link to="/blog/" class="hover:text-gray-400">Blog</nuxt-link>
+            <NuxtLink to="/blog/" class="hover:text-gray-400">Blog</NuxtLink>
           </li>
         </ul>
       </nav>

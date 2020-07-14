@@ -32,10 +32,10 @@ export default {
   props: {
     title: { type: String, required: true },
     desc: { type: String, required: true },
-    github: String,
-    docs: String,
-    licenseText: String,
-    licenseUrl: String,
+    github: { type: String, default: null },
+    docs: { type: String, default: null },
+    licenseText: { type: String, default: null },
+    licenseUrl: { type: String, default: null },
   },
 };
 </script>

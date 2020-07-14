@@ -2,17 +2,22 @@
   <div>
     <div class="mb-4 items-center">
       <div class="flex justify-between">
-        <nuxt-link to="/blog/">
+        <NuxtLink to="/blog/">
           <font-awesome :icon="['fas', 'arrow-left']"></font-awesome>
           <span class="pl-2 link">Back to all posts</span>
-        </nuxt-link>
+        </NuxtLink>
         <span class="text-gray-700">{{ post.date.substring(0, 10) }}</span>
       </div>
     </div>
 
-    <article class="px-4">
-      <img v-if="post.image" :src="post.image" alt="Banner Image" />
-      <nuxt-content :document="post" />
+    <article class="px-4 py-2">
+      <img
+        v-if="post.image"
+        :src="post.image"
+        alt="Banner Image"
+        class="mb-4"
+      />
+      <nuxt-content :document="post" class="prose max-w-none" />
     </article>
 
     <Tags :tags="post.tags" class="ml-4" />

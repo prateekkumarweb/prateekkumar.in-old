@@ -18,10 +18,10 @@
 <script>
 export default {
   props: {
-    title: String,
-    authors: Array,
-    conf: String,
-    pdf: String,
+    title: { type: String, default: null },
+    authors: { type: Array, default: () => [] },
+    conf: { type: String, default: null },
+    pdf: { type: String, default: null },
   },
 };
 </script>
