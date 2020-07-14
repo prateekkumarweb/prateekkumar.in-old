@@ -33,6 +33,7 @@ export default {
         type: 'application/ld+json',
       },
     ],
+    __dangerouslyDisableSanitizers: ['script'],
   },
 };
 </script>

@@ -54,7 +54,6 @@ export default {
     ProjectList,
   },
   head: {
-    title: 'Prateek Kumar | Developer | Rust and JavaScript',
     script: [
       {
         innerHTML: JSON.stringify(
@@ -86,6 +85,7 @@ export default {
         type: 'application/ld+json',
       },
     ],
+    __dangerouslyDisableSanitizers: ['script'], // required because vue-meta escapes " as &quot;
   },
 };
 </script>
