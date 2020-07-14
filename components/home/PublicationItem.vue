@@ -15,13 +15,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: { type: String, default: null },
-    authors: { type: Array, default: () => [] },
-    conf: { type: String, default: null },
-    pdf: { type: String, default: null },
-  },
-};
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator';
+
+@Component
+export default class PublicationItem extends Vue {
+  @Prop({ type: String, required: true }) readonly title!: string;
+  @Prop({ type: Array, default: () => [] }) readonly authors!: string[];
+  @Prop(String) readonly conf: string | undefined;
+  @Prop(String) readonly pdf: string | undefined;
+}
 </script>

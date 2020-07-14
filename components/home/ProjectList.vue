@@ -13,56 +13,52 @@
   </div>
 </template>
 
-<script>
-import ProjectItem from '~/components/home/ProjectItem';
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator';
+import ProjectItem from '~/components/home/ProjectItem.vue';
 
-export default {
+@Component({
   components: {
     ProjectItem,
   },
-  data() {
-    return {
-      projects: [
-        {
-          title: 'Open-WBO-Inc',
-          desc:
-            'Open-WBO-Inc is a partial incomplete MaxSAT solver built on top of Open-WBO. Open-WBO is an extensible and modular open-source MaxSAT solver. Open-WBO-Inc got 1st place in 60s timeout track and 2nd place in 300s timeout track at MaxSAT Evaluations 2018.',
-          github: 'https://github.com/sbjoshi/Open-WBO-Inc',
-          licenseText: 'MIT',
-          licenseUrl:
-            'https://github.com/sbjoshi/Open-WBO-Inc/blob/master/LICENSE',
-        },
-        {
-          title: 'UTVPI-OA',
-          desc:
-            'Implementation of algorithms to compute overapproximations of polyhedra based on Linear Programming and Fourier-Motzkin elimination.',
-          github: 'https://github.com/IITH-Compilers/UTVPI-OA',
-          licenseText: 'BSD-3-Clause',
-          licenseUrl:
-            'https://github.com/IITH-Compilers/UTVPI-OA/blob/master/LICENSE',
-        },
-        {
-          title: 'Timetabler',
-          desc:
-            'A customizable timetabling software for educational institutions that encodes timetabling constraints as a SAT formula and solves them using a MaxSAT solver.',
-          github: 'https://github.com/sukrutrao/Timetabler',
-          docs: 'https://timetabler.readthedocs.io/',
-          licenseText: 'MIT',
-          licenseUrl:
-            'https://github.com/sukrutrao/Timetabler/blob/master/LICENSE',
-        },
-        {
-          title: 'Autojudge',
-          desc:
-            'An implementation of an online judge that can be used for conducting programming contests as well as managing assignments in a university.',
-          github: 'https://github.com/vbsinha/autojudge',
-          docs: 'https://autojudge.readthedocs.io/',
-          licenseText: 'MIT',
-          licenseUrl:
-            'https://github.com/vbsinha/autojudge/blob/master/LICENSE',
-        },
-      ],
-    };
-  },
-};
+})
+export default class ProjectList extends Vue {
+  projects = [
+    {
+      title: 'Open-WBO-Inc',
+      desc:
+        'Open-WBO-Inc is a partial incomplete MaxSAT solver built on top of Open-WBO. Open-WBO is an extensible and modular open-source MaxSAT solver. Open-WBO-Inc got 1st place in 60s timeout track and 2nd place in 300s timeout track at MaxSAT Evaluations 2018.',
+      github: 'https://github.com/sbjoshi/Open-WBO-Inc',
+      licenseText: 'MIT',
+      licenseUrl: 'https://github.com/sbjoshi/Open-WBO-Inc/blob/master/LICENSE',
+    },
+    {
+      title: 'UTVPI-OA',
+      desc:
+        'Implementation of algorithms to compute overapproximations of polyhedra based on Linear Programming and Fourier-Motzkin elimination.',
+      github: 'https://github.com/IITH-Compilers/UTVPI-OA',
+      licenseText: 'BSD-3-Clause',
+      licenseUrl:
+        'https://github.com/IITH-Compilers/UTVPI-OA/blob/master/LICENSE',
+    },
+    {
+      title: 'Timetabler',
+      desc:
+        'A customizable timetabling software for educational institutions that encodes timetabling constraints as a SAT formula and solves them using a MaxSAT solver.',
+      github: 'https://github.com/sukrutrao/Timetabler',
+      docs: 'https://timetabler.readthedocs.io/',
+      licenseText: 'MIT',
+      licenseUrl: 'https://github.com/sukrutrao/Timetabler/blob/master/LICENSE',
+    },
+    {
+      title: 'Autojudge',
+      desc:
+        'An implementation of an online judge that can be used for conducting programming contests as well as managing assignments in a university.',
+      github: 'https://github.com/vbsinha/autojudge',
+      docs: 'https://autojudge.readthedocs.io/',
+      licenseText: 'MIT',
+      licenseUrl: 'https://github.com/vbsinha/autojudge/blob/master/LICENSE',
+    },
+  ];
+}
 </script>

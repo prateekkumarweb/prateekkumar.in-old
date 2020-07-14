@@ -4,8 +4,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: { tags: { type: Array, required: true } },
-};
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator';
+
+@Component
+export default class Tags extends Vue {
+  @Prop({ type: Array, required: true }) readonly tags!: string[];
+}
 </script>

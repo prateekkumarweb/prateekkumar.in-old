@@ -21,26 +21,26 @@
   </Section>
 </template>
 
-<script>
-import Section from '~/components/home/Section';
-import Tags from '~/components/Tags';
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator';
+import Section from '~/components/home/Section.vue';
+import Tags from '~/components/Tags.vue';
 
-export default {
-  components: { Section, Tags },
-  props: { posts: { type: Array, required: true } },
-  methods: {
-    getUrl(post) {
-      const date = new Date(post.date);
-      return (
-        '/' +
-        date.getFullYear() +
-        '/' +
-        (date.getMonth() + 1).toString().padStart(2, '0') +
-        '/' +
-        post.slug +
-        '/'
-      );
-    },
-  },
-};
+@Component({ components: { Section, Tags } })
+export default class Posts extends Vue {
+  @Prop({ type: Array, required: true }) readonly posts!: any[];
+
+  getUrl(post: any) {
+    const date = new Date(post.date);
+    return (
+      '/' +
+      date.getFullYear() +
+      '/' +
+      (date.getMonth() + 1).toString().padStart(2, '0') +
+      '/' +
+      post.slug +
+      '/'
+    );
+  }
+}
 </script>

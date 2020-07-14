@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Tags from '~/components/Tags';
+import Tags from '~/components/Tags.vue';
 
 export default {
   components: { Tags },

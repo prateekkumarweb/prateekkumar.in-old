@@ -7,8 +7,11 @@
   </section>
 </template>
 
-<script>
-export default {
-  props: { title: { type: String, required: true } },
-};
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator';
+
+@Component
+export default class Section extends Vue {
+  @Prop({ type: String, required: true }) readonly title!: string;
+}
 </script>

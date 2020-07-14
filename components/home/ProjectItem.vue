@@ -27,15 +27,16 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: { type: String, required: true },
-    desc: { type: String, required: true },
-    github: { type: String, default: null },
-    docs: { type: String, default: null },
-    licenseText: { type: String, default: null },
-    licenseUrl: { type: String, default: null },
-  },
-};
+<script lang="ts">
+import { Vue, Component, Prop } from 'vue-property-decorator';
+
+@Component
+export default class ProjectItem extends Vue {
+  @Prop({ type: String, required: true }) readonly title!: string;
+  @Prop({ type: String, required: true }) readonly desc!: string;
+  @Prop(String) readonly github: string | undefined;
+  @Prop(String) readonly docs: string | undefined;
+  @Prop(String) readonly licenseText: string | undefined;
+  @Prop(String) readonly licenseUrl: string | undefined;
+}
 </script>
