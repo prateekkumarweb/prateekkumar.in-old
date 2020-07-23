@@ -13,7 +13,7 @@
     "lint": "npm run lint:js && npm run lint:style"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/vue-fontawesome": "^0.1.10",
