@@ -24,18 +24,20 @@
       <PublicationList />
       <a
         href="https://scholar.google.co.in/citations?user=M1NFyhAAAAAJ&hl=en"
-        class="bg-primary hover:bg-white hover:text-primary border-primary border-2 inline-block text-white font-semibold rounded py-1 px-3 mt-4"
+        class="scholar-button"
         >Google Scholar</a
       >
     </Section>
 
     <Section title="Contact">
       <div class="buttons">
-        <a href="mailto:prateek@prateekkumar.in" class="icon-button">
+        <a href="mailto:prateek@prateekkumar.in" class="link no-underline">
           <span class="icon pr-2">
             <font-awesome :icon="['fas', 'envelope']" />
           </span>
-          <span>prateek@prateekkumar.in</span>
+          <span class="underline hover:no-underline"
+            >prateek@prateekkumar.in</span
+          >
         </a>
       </div>
     </Section>

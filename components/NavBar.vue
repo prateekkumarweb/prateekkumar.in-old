@@ -27,6 +27,29 @@
         <font-awesome :icon="['fab', 'linkedin']"></font-awesome>
         <span class="sr-only">LinkedIn</span>
       </a>
+      <a
+        class="ml-3"
+        href="javascript:"
+        title="Switch theme"
+        @click="changeTheme()"
+      >
+        <font-awesome
+          :icon="['fas', this.$store.state.darkTheme ? 'sun' : 'moon']"
+        ></font-awesome>
+        <span class="sr-only">Theme</span>
+      </a>
     </div>
   </header>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
+  methods: {
+    changeTheme() {
+      this.$store.dispatch('toggleTheme');
+    },
+  },
+});
+</script>

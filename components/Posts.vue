@@ -7,7 +7,7 @@
             <NuxtLink :to="getUrl(post)" class="link text-xl">{{
               post.title
             }}</NuxtLink>
-            <span class="text-gray-700">
+            <span class="text-gray-700 dark:text-gray-300">
               {{ post.date.substring(0, 10) }}
             </span>
           </div>

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="w-full flex flex-col rounded border-gray-900 shadow p-3 mt-3 mr-3"
-  >
+  <div class="w-full flex flex-col p-3 mr-3">
     <div class="flex text-lg">
       <h3 class="font-bold inline-block">{{ title }}</h3>
       <div class="flex-grow"></div>

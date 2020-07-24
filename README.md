@@ -16,7 +16,8 @@ $ npm run dev
 
 # build for production and launch server
 $ npm run build
-$ npm run start
+$ npm run export
+$ npm run serve
 
 # generate static project
 $ npm run generate
