@@ -15,20 +15,8 @@
       </nav>
     </div>
     <div class="mb-1">
-      <a class="icon-button" href="https://github.com/prateekkumarweb">
-        <font-awesome :icon="['fab', 'github']"></font-awesome>
-        <span class="sr-only">GitHub</span>
-      </a>
-      <a class="icon-button" href="https://twitter.com/prateekkumarweb">
-        <font-awesome :icon="['fab', 'twitter']"></font-awesome>
-        <span class="sr-only">Twitter</span>
-      </a>
-      <a class="icon-button" href="https://www.linkedin.com/in/prateekkumarweb">
-        <font-awesome :icon="['fab', 'linkedin']"></font-awesome>
-        <span class="sr-only">LinkedIn</span>
-      </a>
       <a
-        class="ml-3"
+        class="mr-1 text-xl"
         href="javascript:"
         title="Switch theme"
         @click="changeTheme()"
@@ -37,6 +25,21 @@
           :icon="['fas', this.$store.state.darkTheme ? 'sun' : 'moon']"
         ></font-awesome>
         <span class="sr-only">Theme</span>
+      </a>
+      <a class="mx-2 text-2xl" href="https://twitter.com/prateekkumarweb">
+        <font-awesome :icon="['fab', 'twitter']"></font-awesome>
+        <span class="sr-only">Twitter</span>
+      </a>
+      <a
+        class="mx-2 text-2xl"
+        href="https://www.linkedin.com/in/prateekkumarweb"
+      >
+        <font-awesome :icon="['fab', 'linkedin']"></font-awesome>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+      <a class="ml-2 text-2xl" href="https://github.com/prateekkumarweb">
+        <font-awesome :icon="['fab', 'github']"></font-awesome>
+        <span class="sr-only">GitHub</span>
       </a>
     </div>
   </header>

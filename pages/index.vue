@@ -1,5 +1,7 @@
 <template>
   <div>
+    <NuxtContent :document="index" class="max-w-none prose" />
+
     <Section title="Projects">
       <p>Some of the interesting things that I have built/contributed to.</p>
       <ProjectList />
@@ -44,16 +46,21 @@
   </div>
 </template>
 
-<script>
-import PublicationList from '~/components/home/PublicationList';
-import ProjectList from '~/components/home/ProjectList';
-import Section from '~/components/home/Section';
+<script lang="ts">
+import Vue from 'vue';
+import PublicationList from '~/components/home/PublicationList.vue';
+import ProjectList from '~/components/home/ProjectList.vue';
+import Section from '~/components/home/Section.vue';
 
-export default {
+export default Vue.extend({
   components: {
     Section,
     PublicationList,
     ProjectList,
+  },
+  async asyncData({ $content }) {
+    const index = await $content('index').fetch();
+    return { index };
   },
   head: {
     script: [
@@ -65,8 +72,7 @@ export default {
             email: 'prateek@prateekkumar.in',
             name: 'Prateek Kumar',
             gender: 'male',
-            image:
-              'https://gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=256',
+            image: 'https://prateekkumar.in/images/profile.jpg',
             url: 'https://prateekkumar.in',
             sameAs: [
               'https://twitter.com/prateekkumarweb',
@@ -89,5 +95,5 @@ export default {
     ],
     __dangerouslyDisableSanitizers: ['script'], // required because vue-meta escapes " as &quot;
   },
-};
+});
 </script>

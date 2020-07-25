@@ -11,7 +11,7 @@
           >
             <img
               class="h-48 w-48 md:h-32 md:w-32 rounded-full"
-              src="https://gravatar.com/avatar/032b5330be600e6ebb83110ad1c52c96?s=256"
+              src="/images/profile.jpg"
               alt="Profile"
             />
             <div

@@ -19,7 +19,7 @@
         alt="Banner Image"
         class="mb-4"
       />
-      <nuxt-content :document="post" class="max-w-none prose"></nuxt-content>
+      <NuxtContent :document="post" class="max-w-none prose" />
     </article>
 
     <Tags :tags="post.tags" class="ml-4" />
