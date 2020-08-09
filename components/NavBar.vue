@@ -15,17 +15,6 @@
       </nav>
     </div>
     <div class="mb-1">
-      <a
-        class="mr-1 text-xl"
-        href="javascript:"
-        title="Switch theme"
-        @click="changeTheme()"
-      >
-        <font-awesome
-          :icon="['fas', this.$store.state.darkTheme ? 'sun' : 'moon']"
-        ></font-awesome>
-        <span class="sr-only">Theme</span>
-      </a>
       <a class="mx-2 text-2xl" href="https://twitter.com/prateekkumarweb">
         <font-awesome :icon="['fab', 'twitter']"></font-awesome>
         <span class="sr-only">Twitter</span>
@@ -37,9 +26,21 @@
         <font-awesome :icon="['fab', 'linkedin']"></font-awesome>
         <span class="sr-only">LinkedIn</span>
       </a>
-      <a class="ml-2 text-2xl" href="https://github.com/prateekkumarweb">
+      <a class="mx-2 text-2xl" href="https://github.com/prateekkumarweb">
         <font-awesome :icon="['fab', 'github']"></font-awesome>
         <span class="sr-only">GitHub</span>
+      </a>
+      <a
+        class="inline-block rounded-full py-2 px-3 bg-blue-300 text-primary"
+        href="javascript:"
+        title="Switch theme"
+        @click="changeTheme()"
+      >
+        <font-awesome
+          :icon="['fas', getThemeIcon($store.state.theme)]"
+        ></font-awesome>
+        <span class="sr-only">Theme</span>
+        <span class="pl-1">{{ $store.state.theme | capitalize }}</span>
       </a>
     </div>
   </header>
@@ -49,9 +50,26 @@
 import Vue from 'vue';
 
 export default Vue.extend({
+  filters: {
+    capitalize(value: string) {
+      if (!value) return '';
+      value = value.toString();
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    },
+  },
   methods: {
     changeTheme() {
       this.$store.dispatch('toggleTheme');
+    },
+    getThemeIcon(theme: 'system' | 'light' | 'dark') {
+      switch (theme) {
+        case 'system':
+          return 'desktop';
+        case 'light':
+          return 'sun';
+        case 'dark':
+          return 'moon';
+      }
     },
   },
 });

@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ dark: $store.state.darkTheme }">
+  <div :class="{ dark: isDarkThemeEnabled }">
     <div class="flex flex-col min-h-screen bg-gray-200 dark:bg-gray-500">
       <NavBar class="pb-40" />
       <div class="flex-grow -mt-40 p-4">
@@ -30,23 +30,44 @@
 </template>
 
 <script>
+import Vue from 'vue';
+import { mapState } from 'vuex';
 import NavBar from '~/components/NavBar.vue';
 import Footer from '~/components/Footer.vue';
 
-export default {
-  components: {
-    NavBar,
-    Footer,
+export default Vue.extend({
+  components: { NavBar, Footer },
+  data() {
+    return {
+      isDarkThemeEnabled: false,
+    };
+  },
+  computed: {
+    ...mapState(['theme']),
   },
   mounted() {
     if (
       window.matchMedia &&
       window.matchMedia('(prefers-color-scheme: dark)').matches
     ) {
-      if (!this.$store.state.darkTheme) {
-        this.$store.dispatch('toggleTheme');
-      }
+      this.isDarkThemeEnabled = true;
     }
   },
-};
+  created() {
+    this.unsub = this.$store.subscribe((mutation, state) => {
+      if (mutation.type === 'SET_THEME') {
+        this.isDarkThemeEnabled =
+          state.theme === 'dark' ||
+          (state.theme === 'system' &&
+            // eslint-disable-next-line nuxt/no-globals-in-created
+            window.matchMedia &&
+            // eslint-disable-next-line nuxt/no-globals-in-created
+            window.matchMedia('(prefers-color-scheme: dark)').matches);
+      }
+    });
+  },
+  beforeDestroy() {
+    this.unsub();
+  },
+});
 </script>
