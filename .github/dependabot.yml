@@ -4,6 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: monthly
-    open-pull-requests-limit: 10
-    reviewers:
-      - prateekkumarweb
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly

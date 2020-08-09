@@ -17,10 +17,10 @@ jobs:
           node-version: 12.x
 
       - name: Install dependencies
-        run: npm install
+        run: yarrn
 
       - name: Build
-        run: npm run build && npm run export
+        run: yarn build && yarn export
 
       - name: Publish
         uses: netlify/actions/cli@master
