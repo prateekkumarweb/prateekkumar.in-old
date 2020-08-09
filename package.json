@@ -24,8 +24,7 @@
     "nuxt": "^2.14.1",
     "remark-emoji": "^2.1.0",
     "vue-class-component": "^7.2.5",
-    "vue-disqus": "^4.0.1",
-    "vue-property-decorator": "^9.0.0"
+    "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.1",

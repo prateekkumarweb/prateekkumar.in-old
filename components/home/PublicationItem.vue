@@ -16,13 +16,14 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import Vue from 'vue';
 
-@Component
-export default class PublicationItem extends Vue {
-  @Prop({ type: String, required: true }) readonly title!: string;
-  @Prop({ type: Array, default: () => [] }) readonly authors!: string[];
-  @Prop(String) readonly conf: string | undefined;
-  @Prop(String) readonly pdf: string | undefined;
-}
+export default Vue.extend({
+  props: {
+    title: { type: String, required: true },
+    authors: { type: Array, default: () => [] },
+    conf: { type: String, default: '' },
+    pdf: { type: String, default: '' },
+  },
+});
 </script>

@@ -8,10 +8,11 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import Vue from 'vue';
 
-@Component
-export default class Section extends Vue {
-  @Prop({ type: String, required: true }) readonly title!: string;
-}
+export default Vue.extend({
+  props: {
+    title: { type: String, required: true },
+  },
+});
 </script>

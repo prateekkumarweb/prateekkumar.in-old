@@ -7,10 +7,9 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import Vue from 'vue';
 
-@Component
-export default class Tag extends Vue {
-  @Prop({ type: String, required: true }) readonly tag!: string;
-}
+export default Vue.extend({
+  props: { tag: { type: String, required: true } },
+});
 </script>
