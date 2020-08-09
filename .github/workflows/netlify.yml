@@ -20,7 +20,7 @@ jobs:
         run: yarn
 
       - name: Build
-        run: yarn build && yarn export
+        run: yarn generate
 
       - name: Publish
         uses: netlify/actions/cli@master
