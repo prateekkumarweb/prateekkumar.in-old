@@ -15,23 +15,29 @@
       </nav>
     </div>
     <div class="mb-1">
-      <a class="mx-2 text-2xl" href="https://twitter.com/prateekkumarweb">
+      <a
+        class="mx-2 text-2xl align-middle"
+        href="https://twitter.com/prateekkumarweb"
+      >
         <font-awesome :icon="['fab', 'twitter']"></font-awesome>
         <span class="sr-only">Twitter</span>
       </a>
       <a
-        class="mx-2 text-2xl"
+        class="mx-2 text-2xl align-middle"
         href="https://www.linkedin.com/in/prateekkumarweb"
       >
         <font-awesome :icon="['fab', 'linkedin']"></font-awesome>
         <span class="sr-only">LinkedIn</span>
       </a>
-      <a class="mx-2 text-2xl" href="https://github.com/prateekkumarweb">
+      <a
+        class="mx-2 text-2xl align-middle"
+        href="https://github.com/prateekkumarweb"
+      >
         <font-awesome :icon="['fab', 'github']"></font-awesome>
         <span class="sr-only">GitHub</span>
       </a>
       <a
-        class="inline-block rounded-full py-2 px-3 bg-blue-300 text-primary"
+        class="inline-block rounded-full py-2 px-3 bg-blue-300 text-primary align-middle"
         href="javascript:"
         title="Switch theme"
         @click="changeTheme()"

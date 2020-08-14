@@ -19,7 +19,7 @@
         href="https://creativecommons.org/licenses/by-sa/4.0/"
         >CC BY SA 4.0</a
       >. <br />Deployed using
-      <a class="link text-white" href="https://www.netlify.com/">Netlify</a>.
+      <a class="link text-white" href="https://vercel.com/">Vercel</a>.
     </p>
   </footer>
 </template>
