@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-900 text-gray-300 px-auto py-12 mt-6 text-center">
+  <footer class="bg-gray-900 text-gray-300 px-auto py-12 text-center">
     <p class="px-2">
       <strong class="has-text-white">&copy; 2020 Prateek Kumar.</strong>
       The

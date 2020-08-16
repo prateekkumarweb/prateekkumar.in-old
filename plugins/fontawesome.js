@@ -7,6 +7,8 @@ import {
   faLink,
   faArrowLeft,
   faBook,
+  faBars,
+  faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
@@ -27,7 +29,9 @@ library.add(
   faEnvelope,
   faLink,
   faArrowLeft,
-  faBook
+  faBook,
+  faBars,
+  faTimes
 );
 
 // Register the component globally

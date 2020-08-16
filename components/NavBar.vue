@@ -1,43 +1,43 @@
 <template>
   <header
-    class="flex flex-col sm:flex-row items-center justify-around py-3 bg-primary text-white"
+    class="flex flex-col md:flex-row md:items-center md:justify-around p-3 md:px-0 bg-primary text-white"
   >
-    <div class="my-3 flex flex-col sm:flex-row items-baseline">
-      <div class="md:mr-3 mb-1">
+    <div class="flex flex-row items-center">
+      <div class="md:mr-3 flex-1">
         <NuxtLink to="/" class="text-2xl">Prateek Kumar</NuxtLink>
       </div>
-      <nav class="self-center mb-1">
-        <ul class="flex text-xl">
-          <li class="mx-3">
-            <NuxtLink to="/blog/" class="hover:text-gray-400">Blog</NuxtLink>
-          </li>
-        </ul>
-      </nav>
+      <div class="text-2xl">
+        <font-awesome
+          :icon="['fas', navOpen ? 'times' : 'bars']"
+          class="md:hidden cursor-pointer"
+          @click="toggleNav()"
+        ></font-awesome>
+      </div>
     </div>
-    <div class="mb-1">
-      <a
-        class="mx-2 text-2xl align-middle"
-        href="https://twitter.com/prateekkumarweb"
+    <nav
+      class="flex flex-col md:flex-row items-start md:items-center text-xl md:block"
+      :class="{ hidden: !navOpen }"
+    >
+      <NuxtLink to="/blog/" class="hover:text-gray-400 m-2 text-xl align-middle"
+        >Blog</NuxtLink
       >
+      <a class="m-2 align-middle" href="https://twitter.com/prateekkumarweb">
         <font-awesome :icon="['fab', 'twitter']"></font-awesome>
-        <span class="sr-only">Twitter</span>
+        <span class="md:hidden pl-2">Twitter</span>
       </a>
       <a
-        class="mx-2 text-2xl align-middle"
+        class="m-2 align-middle"
         href="https://www.linkedin.com/in/prateekkumarweb"
       >
         <font-awesome :icon="['fab', 'linkedin']"></font-awesome>
-        <span class="sr-only">LinkedIn</span>
+        <span class="md:hidden pl-2">LinkedIn</span>
       </a>
-      <a
-        class="mx-2 text-2xl align-middle"
-        href="https://github.com/prateekkumarweb"
-      >
+      <a class="m-2 align-middle" href="https://github.com/prateekkumarweb">
         <font-awesome :icon="['fab', 'github']"></font-awesome>
-        <span class="sr-only">GitHub</span>
+        <span class="md:hidden pl-2">GitHub</span>
       </a>
       <a
-        class="inline-block rounded-full py-2 px-3 bg-blue-300 text-primary align-middle"
+        class="m-2 inline-block rounded-full py-2 px-3 bg-blue-300 text-primary align-middle text-sm"
         href="javascript:"
         title="Switch theme"
         @click="changeTheme()"
@@ -48,7 +48,7 @@
         <span class="sr-only">Theme</span>
         <span class="pl-1">{{ $store.state.theme | capitalize }}</span>
       </a>
-    </div>
+    </nav>
   </header>
 </template>
 
@@ -63,7 +63,15 @@ export default Vue.extend({
       return value.charAt(0).toUpperCase() + value.slice(1);
     },
   },
+  data() {
+    return {
+      navOpen: false,
+    };
+  },
   methods: {
+    toggleNav() {
+      this.navOpen = !this.navOpen;
+    },
     changeTheme() {
       this.$store.dispatch('toggleTheme');
     },

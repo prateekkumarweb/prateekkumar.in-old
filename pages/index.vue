@@ -1,5 +1,7 @@
 <template>
   <div>
+    <MeCard />
+
     <NuxtContent :document="index" class="max-w-none prose" />
 
     <Section title="Projects">
@@ -48,12 +50,14 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import MeCard from '~/components/MeCard.vue';
 import PublicationList from '~/components/home/PublicationList.vue';
 import ProjectList from '~/components/home/ProjectList.vue';
 import Section from '~/components/home/Section.vue';
 
 export default Vue.extend({
   components: {
+    MeCard,
     Section,
     PublicationList,
     ProjectList,

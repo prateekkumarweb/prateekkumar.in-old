@@ -1,10 +1,10 @@
 <template>
   <Section title="Posts">
     <ul>
-      <li v-for="post in posts" :key="post.path" class="p-4">
+      <li v-for="post in posts" :key="post.path" class="py-2">
         <div>
           <div class="flex justify-between flex-wrap">
-            <NuxtLink :to="getUrl(post)" class="link text-xl">{{
+            <NuxtLink :to="getUrl(post)" class="link">{{
               post.title
             }}</NuxtLink>
             <span class="text-gray-700 dark:text-gray-300">

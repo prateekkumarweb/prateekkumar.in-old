@@ -1,12 +1,16 @@
 <template>
-  <Posts :posts="posts" />
+  <div>
+    <MeCard />
+    <Posts :posts="posts" />
+  </div>
 </template>
 
 <script>
 import Posts from '~/components/Posts';
+import MeCard from '~/components/MeCard';
 
 export default {
-  components: { Posts },
+  components: { Posts, MeCard },
 
   async asyncData({ $content }) {
     const posts = await $content('posts', { deep: true })

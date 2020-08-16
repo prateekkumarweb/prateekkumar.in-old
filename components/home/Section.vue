@@ -1,7 +1,7 @@
 <template>
-  <section class="py-4">
-    <h2 class="text-2xl">{{ title }}</h2>
-    <div class="mt-3">
+  <section class="py-2">
+    <h2 class="text-xl">{{ title }}</h2>
+    <div class="mt-2">
       <slot />
     </div>
   </section>
