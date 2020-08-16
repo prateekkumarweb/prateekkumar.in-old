@@ -18,6 +18,7 @@
       class="flex flex-col md:flex-row items-start md:items-center text-xl md:block"
       :class="{ hidden: !navOpen }"
     >
+      <Search :class="['mt-4 mb-2 md:my-0']" />
       <NuxtLink to="/blog/" class="hover:text-gray-400 m-2 text-xl align-middle"
         >Blog</NuxtLink
       >
