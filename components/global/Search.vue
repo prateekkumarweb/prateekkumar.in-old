@@ -3,7 +3,7 @@
     <div
       class="rounded-lg p-1 text-gray-600 bg-white border border-transparent text-sm flex items-center w-full md:inline-block"
     >
-      <font-awesome :icon="['fas', 'search']" class="ml-2"></font-awesome>
+      <font-awesome :icon="['fas', 'search']" class="mx-1"></font-awesome>
       <input
         v-model="query"
         type="text"

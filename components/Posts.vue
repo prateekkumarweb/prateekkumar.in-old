@@ -4,9 +4,12 @@
       <li v-for="post in posts" :key="post.path" class="py-2">
         <div>
           <div class="flex justify-between flex-wrap">
-            <NuxtLink :to="getUrl(post)" class="link">{{
-              post.title
-            }}</NuxtLink>
+            <NuxtLink
+              :to="getUrl(post)"
+              class="text-primary underline dark:text-blue-300 hover:no-underline"
+            >
+              {{ post.title }}
+            </NuxtLink>
             <span class="text-gray-700 dark:text-gray-300">
               {{ post.date.substring(0, 10) }}
             </span>

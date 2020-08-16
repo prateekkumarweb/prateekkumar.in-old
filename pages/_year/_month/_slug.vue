@@ -4,7 +4,10 @@
       <div class="flex justify-between">
         <NuxtLink to="/blog/">
           <font-awesome :icon="['fas', 'arrow-left']"></font-awesome>
-          <span class="pl-2 link">Back to all posts</span>
+          <span
+            class="pl-2 text-primary underline dark:text-blue-300 hover:no-underline"
+            >Back to all posts</span
+          >
         </NuxtLink>
         <span class="text-gray-700 dark:text-gray-300">
           {{ post.date.substring(0, 10) }}

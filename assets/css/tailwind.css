@@ -6,42 +6,6 @@ html {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.icon-button {
-  @apply bg-gray-300 text-gray-800 font-bold py-3 px-3 mx-1 rounded inline-flex items-center;
-}
-
-.icon-button:hover {
-  @apply bg-gray-400;
-}
-
-.link {
-  @apply text-primary underline;
-}
-
-.dark .link {
-  @apply text-blue-300;
-}
-
-.link:hover {
-  @apply no-underline;
-}
-
-.scholar-button {
-  @apply bg-primary text-white border-primary border-2 inline-block font-semibold rounded py-1 px-3 mt-4;
-}
-
-.scholar-button:hover {
-  @apply bg-white text-primary;
-}
-
-.dark .scholar-button {
-  @apply bg-blue-300 text-primary border-blue-300;
-}
-
-.dark .scholar-button:hover {
-  @apply bg-primary text-white;
-}
-
 .prose > ul > li > input[type='checkbox'] {
   @apply mt-0 mb-0 mr-1;
 }

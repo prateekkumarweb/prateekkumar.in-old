@@ -13,11 +13,15 @@
       <ul>
         <li>
           B. Tech. (Honors) in
-          <a href="https://cse.iith.ac.in" class="link"
+          <a
+            href="https://cse.iith.ac.in"
+            class="text-primary underline dark:text-blue-300 hover:no-underline"
             >Computer Science and Engineering</a
           >, 2015 - 2019
           <br />
-          <a href="https://iith.ac.in" class="link"
+          <a
+            href="https://iith.ac.in"
+            class="text-primary underline dark:text-blue-300 hover:no-underline"
             >Indian Institute of Technology Hyderabad</a
           >
         </li>
@@ -28,14 +32,34 @@
       <PublicationList />
       <a
         href="https://scholar.google.co.in/citations?user=M1NFyhAAAAAJ&hl=en"
-        class="scholar-button"
+        :class="[
+          'bg-primary',
+          'text-white',
+          'border-primary',
+          'border',
+          'inline-block',
+          'rounded',
+          'py-1',
+          'px-3',
+          'mt-4',
+          'hover:bg-white',
+          'hover:text-primary',
+          'dark:bg-blue-300',
+          'dark:text-primary',
+          'dark:border-blue-300',
+          'dark-hover:bg-primary',
+          'dark-hover:text-white',
+        ]"
         >Google Scholar</a
       >
     </Section>
 
     <Section title="Contact">
       <div class="buttons">
-        <a href="mailto:prateek@prateekkumar.in" class="link no-underline">
+        <a
+          href="mailto:prateek@prateekkumar.in"
+          class="text-primary dark:text-blue-300"
+        >
           <span class="icon pr-2">
             <font-awesome :icon="['fas', 'envelope']" />
           </span>

@@ -7,7 +7,7 @@
     <a
       v-if="pdf"
       :href="pdf"
-      class="link"
+      class="text-primary underline dark:text-blue-300 hover:no-underline"
       target="_blank"
       rel="nofollow noopener noreferrer"
       >PDF</a
