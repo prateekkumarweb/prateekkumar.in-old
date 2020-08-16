@@ -1,12 +1,12 @@
 <template>
   <header
-    class="flex flex-col md:flex-row md:items-center md:justify-around p-3 md:px-0 bg-primary text-white"
+    class="flex flex-col md:flex-row md:items-center md:justify-around px-4 py-3 md:px-0 bg-primary text-white"
   >
     <div class="flex flex-row items-center">
       <div class="md:mr-3 flex-1">
         <NuxtLink to="/" class="text-2xl">Prateek Kumar</NuxtLink>
       </div>
-      <div class="text-2xl">
+      <div class="text-xl">
         <font-awesome
           :icon="['fas', navOpen ? 'times' : 'bars']"
           class="md:hidden cursor-pointer"

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col md:flex-row border-b-2 border-gray-400 pb-6 mb-4 items-center"
+    class="flex flex-col md:flex-row border-b border-gray-400 pb-6 mb-4 items-center"
   >
     <img
       class="h-48 w-48 md:h-32 md:w-32 rounded-full"
