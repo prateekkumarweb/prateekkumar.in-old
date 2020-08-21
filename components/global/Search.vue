@@ -9,13 +9,15 @@
         type="text"
         class="focus:outline-none m-1 flex-grow"
         placeholder="Search"
-        @keyup="debounce(search)"
-        @focus="isInputFocus = true"
-        @blur="isInputFocus = false"
+        @input="debounce(search)"
+        @focus="showResults = true"
+        @keydown.down.prevent="onArrowDown"
+        @keydown.up.prevent="onArrowUp"
+        @keydown.enter.prevent="onEnter"
       />
     </div>
     <div
-      v-if="query && isInputFocus"
+      v-if="showResults && query"
       class="absolute rounded-lg my-2 text-gray-600 bg-white text-sm w-full shadow-lg z-10 overflow-hidden"
     >
       <div v-if="results.length === 0" class="p-3">No results available</div>
@@ -23,7 +25,10 @@
         v-for="(result, key) in results"
         :key="result.refIndex"
         class="p-3 hover:bg-blue-300 hover:text-primary"
-        :class="{ 'border-t': key !== 0 }"
+        :class="{
+          'border-t': key !== 0,
+          'bg-blue-300 text-primary': key === arrowCounter,
+        }"
       >
         <nuxt-link :to="getPostLink(result.item)">{{
           result.item.title
@@ -43,11 +48,19 @@ export default Vue.extend({
       query: '',
       timeout: (null as unknown) as number,
       results: [] as Fuse.FuseResult<Object>[],
-      isInputFocus: false,
+      showResults: false,
+      arrowCounter: 0,
     };
+  },
+  mounted() {
+    document.addEventListener('click', this.handleClickOutside);
+  },
+  destroyed() {
+    document.removeEventListener('click', this.handleClickOutside);
   },
   methods: {
     debounce(fn: Function, duration: number = 250) {
+      this.showResults = true;
       if (this.timeout !== null) {
         window.clearTimeout(this.timeout);
       }
@@ -65,12 +78,32 @@ export default Vue.extend({
         keys: ['title', 'tags'],
       });
       this.results = fuse.search(this.query);
+      if (this.results.length <= this.arrowCounter) this.arrowCounter = 0;
     },
     getPostLink(post: any) {
       const date = new Date(post.date);
       const year = date.getFullYear();
       const month = (date.getMonth() + 1).toString().padStart(2, '0');
       return `/${year}/${month}/${post.slug}`;
+    },
+    onArrowDown() {
+      if (this.arrowCounter < this.results.length) {
+        this.arrowCounter = this.arrowCounter + 1;
+      }
+    },
+    onArrowUp() {
+      if (this.arrowCounter > 0) {
+        this.arrowCounter = this.arrowCounter - 1;
+      }
+    },
+    onEnter() {
+      this.$router.push(this.getPostLink(this.results[this.arrowCounter].item));
+      this.showResults = false;
+    },
+    handleClickOutside(event: any) {
+      if (!this.$el.contains(event.target)) {
+        this.showResults = false;
+      }
     },
   },
 });
