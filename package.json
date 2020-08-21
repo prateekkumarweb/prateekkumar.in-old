@@ -21,6 +21,7 @@
     "@nuxt/typescript-runtime": "^1.0.0",
     "@nuxtjs/pwa": "^3.0.1",
     "@tailwindcss/typography": "^0.2.0",
+    "fuse.js": "^6.4.1",
     "nuxt": "^2.14.3",
     "remark-emoji": "^2.1.0",
     "vue-class-component": "^7.2.5",
