@@ -10,10 +10,12 @@
         class="focus:outline-none m-1 flex-grow"
         placeholder="Search"
         @keyup="debounce(search)"
+        @focus="isInputFocus = true"
+        @blur="isInputFocus = false"
       />
     </div>
     <div
-      v-if="query"
+      v-if="query && isInputFocus"
       class="absolute rounded-lg my-2 text-gray-600 bg-white text-sm w-full shadow-lg z-10 overflow-hidden"
     >
       <div v-if="results.length === 0" class="p-3">No results available</div>
@@ -41,6 +43,7 @@ export default Vue.extend({
       query: '',
       timeout: (null as unknown) as number,
       results: [] as Fuse.FuseResult<Object>[],
+      isInputFocus: false,
     };
   },
   methods: {
