@@ -5,11 +5,11 @@
     >
       <font-awesome :icon="['fas', 'search']" class="mx-1"></font-awesome>
       <input
-        v-model="query"
         type="text"
         class="focus:outline-none m-1 flex-grow"
         placeholder="Search"
-        @input="debounce(search)"
+        :value="query"
+        @input="debounce(search, $event)"
         @focus="showResults = true"
         @keydown.down.prevent="onArrowDown"
         @keydown.up.prevent="onArrowUp"
@@ -59,7 +59,8 @@ export default Vue.extend({
     document.removeEventListener('click', this.handleClickOutside);
   },
   methods: {
-    debounce(fn: Function, duration: number = 250) {
+    debounce(fn: Function, event: any, duration: number = 250) {
+      this.query = event.target.value;
       this.showResults = true;
       if (this.timeout !== null) {
         window.clearTimeout(this.timeout);
