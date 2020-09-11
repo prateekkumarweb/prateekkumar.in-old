@@ -81,7 +81,7 @@ export default {
               dateModified: `${this.post.updatedAt}`,
               headline: `${this.post.title}`,
               image: `https://prateekkumar.in${
-                this.post.image ?? '/images/profile.jpg'
+                this.post.image || '/images/profile.jpg'
               }`,
               publisher: {
                 '@type': 'Organization',

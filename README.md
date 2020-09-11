@@ -14,6 +14,9 @@ $ yarn dev
 # generate static project
 $ yarn generate
 
+# for ssr
+$ yarn build
+
 # Preview
 $ yarn start
 ```
