@@ -22,6 +22,10 @@ const darkModePlugin = plugin(function ({ addVariant, e }) {
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   important: true,
   theme: {
     fontFamily: {
