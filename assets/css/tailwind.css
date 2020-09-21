@@ -2,8 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-html {
+body {
   font-family: 'Noto Sans', sans-serif;
+}
+
+.font-comic {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .prose > ul > li > input[type='checkbox'] {
