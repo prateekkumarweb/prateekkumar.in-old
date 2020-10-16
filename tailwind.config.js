@@ -1,6 +1,6 @@
 const plugin = require('tailwindcss/plugin');
 const darkModePlugin = plugin(function ({ addVariant, e }) {
-  const darkSelector = 'dark';
+  const darkSelector = 'dark-mode';
   addVariant('dark', ({ modifySelectors, separator }) => {
     modifySelectors(({ className }) => {
       return `.${darkSelector} .${e(`dark${separator}${className}`)}`;
@@ -25,6 +25,8 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
+    defaultLineHeights: true,
+    standardFontWeights: true,
   },
   important: true,
   theme: {

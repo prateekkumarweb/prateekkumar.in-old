@@ -68,6 +68,7 @@ export default {
         id: 'UA-89128710-1',
       },
     ],
+    '@nuxtjs/color-mode',
   ],
   /*
    ** Nuxt.js modules

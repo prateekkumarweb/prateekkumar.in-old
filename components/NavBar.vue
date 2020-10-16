@@ -42,23 +42,21 @@
         title="Switch theme"
         @click="changeTheme()"
       >
-        <font-awesome
-          :icon="['fas', getThemeIcon($store.state.theme)]"
-        ></font-awesome>
+        <font-awesome :icon="['fas', getThemeIcon()]"></font-awesome>
         <span class="sr-only">Theme</span>
-        <span class="pl-1">{{ $store.state.theme | capitalize }}</span>
+        <span class="pl-1">{{ $colorMode.preference | capitalize }}</span>
       </a>
       <Search :class="['mt-4 mb-2 md:my-0']" />
     </nav>
   </header>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 
 export default Vue.extend({
   filters: {
-    capitalize(value: string) {
+    capitalize(value) {
       if (!value) return '';
       value = value.toString();
       return value.charAt(0).toUpperCase() + value.slice(1);
@@ -74,10 +72,23 @@ export default Vue.extend({
       this.navOpen = !this.navOpen;
     },
     changeTheme() {
-      this.$store.dispatch('toggleTheme');
+      switch (this.$colorMode.preference) {
+        case 'system':
+          this.$colorMode.preference = 'light';
+          break;
+        case 'light':
+          this.$colorMode.preference = 'dark';
+          break;
+        case 'dark':
+          this.$colorMode.preference = 'system';
+          break;
+      }
+      // switch (this.$colorMode.value) {
+
+      // }
     },
-    getThemeIcon(theme: 'system' | 'light' | 'dark') {
-      switch (theme) {
+    getThemeIcon() {
+      switch (this.$colorMode.preference) {
         case 'system':
           return 'desktop';
         case 'light':

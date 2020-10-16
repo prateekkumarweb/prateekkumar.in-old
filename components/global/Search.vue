@@ -73,7 +73,7 @@ export default Vue.extend({
       const posts = await this.$content('posts', { deep: true })
         .sortBy('date', 'desc')
         .fetch();
-      const fuse = new Fuse(posts, {
+      const fuse = new Fuse(posts as [], {
         includeScore: true,
         isCaseSensitive: false,
         keys: ['title', 'tags'],

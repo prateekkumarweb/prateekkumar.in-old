@@ -14,70 +14,70 @@ body {
   @apply mt-0 mb-0 mr-1;
 }
 
-.dark .prose {
+.dark-mode .prose {
   @apply text-gray-300;
 }
 
-.dark .prose [class~='lead'] {
+.dark-mode .prose [class~='lead'] {
   @apply text-gray-300;
 }
 
-.dark .prose a {
+.dark-mode .prose a {
   @apply text-gray-100;
 }
 
-.dark .prose strong {
+.dark-mode .prose strong {
   @apply text-gray-100;
 }
 
-.dark .prose ol > li::before {
+.dark-mode .prose ol > li::before {
   @apply text-gray-400;
 }
 
-.dark .prose ul > li::before {
+.dark-mode .prose ul > li::before {
   @apply bg-gray-600;
 }
 
-.dark .prose hr {
+.dark-mode .prose hr {
   @apply border-gray-700;
 }
 
-.dark .prose blockquote {
+.dark-mode .prose blockquote {
   @apply text-gray-100 bg-gray-700;
 }
 
-.dark .prose h1 {
+.dark-mode .prose h1 {
   @apply text-gray-100;
 }
 
-.dark .prose h2 {
+.dark-mode .prose h2 {
   @apply text-gray-100;
 }
 
-.dark .prose h3 {
+.dark-mode .prose h3 {
   @apply text-gray-100;
 }
 
-.dark .prose h4 {
+.dark-mode .prose h4 {
   @apply text-gray-100;
 }
 
-.dark .prose figure figcaption {
+.dark-mode .prose figure figcaption {
   @apply text-gray-400;
 }
 
-.dark .prose *:not(pre) > code {
+.dark-mode .prose *:not(pre) > code {
   @apply text-gray-100;
 }
 
-.dark .prose pre {
+.dark-mode .prose pre {
   @apply text-gray-700 bg-gray-200;
 }
 
-.dark .prose thead {
+.dark-mode .prose thead {
   @apply text-gray-100 border-gray-600;
 }
 
-.dark .prose tbody tr {
+.dark-mode .prose tbody tr {
   @apply border-gray-700;
 }
