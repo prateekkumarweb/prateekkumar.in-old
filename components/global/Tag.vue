@@ -1,9 +1,10 @@
 <template>
-  <a
-    :href="'/tag/' + tag"
+  <nuxt-link
+    :to="'/tag/' + tag"
     class="text-sm inline-block bg-gray-400 dark:bg-gray-600 px-2 mr-1 my-1 rounded-l-full rounded-r-full"
-    >#{{ tag }}</a
   >
+    #{{ tag }}
+  </nuxt-link>
 </template>
 
 <script lang="ts">
