@@ -47,8 +47,8 @@
           'dark:bg-blue-300',
           'dark:text-primary',
           'dark:border-blue-300',
-          'dark-hover:bg-primary',
-          'dark-hover:text-white',
+          'dark:hover:bg-primary',
+          'dark:hover:text-white',
         ]"
         >Google Scholar</a
       >
