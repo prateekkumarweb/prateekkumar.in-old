@@ -19,6 +19,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "@nuxt/content": "^1.10.0",
     "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/gtm": "^2.3.2",
     "@nuxtjs/pwa": "^3.2.2",
     "@tailwindcss/typography": "^0.2.0",
     "fuse.js": "^6.4.3",

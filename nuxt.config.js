@@ -57,12 +57,12 @@ export default {
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-89128710-1',
-      },
-    ],
+    // [
+    //   '@nuxtjs/google-analytics',
+    //   {
+    //     id: 'UA-89128710-1',
+    //   },
+    // ],
     [
       '@nuxtjs/color-mode',
       {
@@ -75,6 +75,7 @@ export default {
    */
   modules: [
     [
+      '@nuxtjs/gtm',
       '@nuxtjs/pwa',
       {
         manifest: {
@@ -98,6 +99,9 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
   ],
+  gtm: {
+    id: 'GTM-TH6BJ98',
+  },
   /*
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
