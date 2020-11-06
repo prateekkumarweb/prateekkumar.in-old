@@ -57,12 +57,6 @@ export default {
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    // [
-    //   '@nuxtjs/google-analytics',
-    //   {
-    //     id: 'UA-89128710-1',
-    //   },
-    // ],
     [
       '@nuxtjs/color-mode',
       {
