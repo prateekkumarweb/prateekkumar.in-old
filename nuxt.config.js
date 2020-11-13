@@ -95,6 +95,8 @@ export default {
   ],
   gtm: {
     id: 'GTM-TH6BJ98',
+    pageTracking: true,
+    enabled: true,
   },
   /*
    ** Content module configuration
