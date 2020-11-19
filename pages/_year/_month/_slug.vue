@@ -40,27 +40,6 @@ export default {
     const post = await $content('posts', params.year, params.slug).fetch();
     return { post };
   },
-  mounted() {
-    this.$nextTick(function () {
-      if (window.MathJax) {
-        window.MathJax.typeset();
-      }
-    });
-  },
-  methods: {
-    getUrl(post) {
-      const date = new Date(post.date);
-      return (
-        '/' +
-        date.getFullYear() +
-        '/' +
-        (date.getMonth() + 1).toString().padStart(2, '0') +
-        '/' +
-        post.slug +
-        '/'
-      );
-    },
-  },
   head() {
     return {
       title: `${this.post.title} | Prateek Kumar | Developer`,
@@ -103,6 +82,27 @@ export default {
       ],
       __dangerouslyDisableSanitizers: ['script'],
     };
+  },
+  mounted() {
+    this.$nextTick(function () {
+      if (window.MathJax) {
+        window.MathJax.typeset();
+      }
+    });
+  },
+  methods: {
+    getUrl(post) {
+      const date = new Date(post.date);
+      return (
+        '/' +
+        date.getFullYear() +
+        '/' +
+        (date.getMonth() + 1).toString().padStart(2, '0') +
+        '/' +
+        post.slug +
+        '/'
+      );
+    },
   },
 };
 </script>
