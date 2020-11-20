@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: prateekkumar.in
+    env: static
+    buildCommand: yarn generate
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: true
