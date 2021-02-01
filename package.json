@@ -22,7 +22,7 @@
     "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/pwa": "^3.3.2",
     "@tailwindcss/typography": "^0.3.1",
-    "fuse.js": "^6.4.3",
+    "fuse.js": "^6.4.6",
     "nuxt": "^2.14.11",
     "remark-emoji": "^2.1.0",
     "vue-class-component": "^7.2.6",
