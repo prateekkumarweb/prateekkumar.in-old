@@ -10,7 +10,6 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "npm.packageManager": "yarn",
     "editor.tabSize": 2,
     "editor.rulers": [
         100

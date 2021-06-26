@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: prateekkumar.in
-    env: static
-    repo: https://github.com/prateekkumarweb/prateekkumar.in.git
-    branch: main
-    buildCommand: yarn generate
-    staticPublishPath: ./dist
-    pullRequestPreviewsEnabled: true

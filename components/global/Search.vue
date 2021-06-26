@@ -1,7 +1,19 @@
 <template>
   <div class="inline-block w-full md:w-64 relative">
     <div
-      class="rounded-full py-1 px-2 text-gray-600 bg-white border border-transparent text-sm flex items-center w-full md:inline-block"
+      class="
+        rounded-full
+        py-1
+        px-2
+        text-gray-600
+        bg-white
+        border border-transparent
+        text-sm
+        flex
+        items-center
+        w-full
+        md:inline-block
+      "
     >
       <font-awesome :icon="['fas', 'search']" class="mx-1"></font-awesome>
       <input
@@ -18,7 +30,18 @@
     </div>
     <div
       v-if="showResults && query"
-      class="absolute rounded-lg my-2 text-gray-600 bg-white text-sm w-full shadow-lg z-10 overflow-hidden"
+      class="
+        absolute
+        rounded-lg
+        my-2
+        text-gray-600
+        bg-white
+        text-sm
+        w-full
+        shadow-lg
+        z-10
+        overflow-hidden
+      "
     >
       <div v-if="results.length === 0" class="p-3">No results available</div>
       <div
@@ -46,7 +69,7 @@ export default Vue.extend({
   data() {
     return {
       query: '',
-      timeout: (null as unknown) as number,
+      timeout: null as unknown as number,
       results: [] as Fuse.FuseResult<Object>[],
       showResults: false,
       arrowCounter: 0,

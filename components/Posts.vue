@@ -6,7 +6,12 @@
           <div class="flex justify-between flex-wrap">
             <NuxtLink
               :to="getUrl(post)"
-              class="text-primary underline dark:text-blue-300 hover:no-underline"
+              class="
+                text-primary
+                underline
+                dark:text-blue-300
+                hover:no-underline
+              "
             >
               {{ post.title }}
             </NuxtLink>

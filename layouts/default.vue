@@ -4,7 +4,15 @@
       <NavBar />
       <div class="flex-grow p-4 my-2">
         <section
-          class="container mx-auto p-6 shadow rounded-lg bg-gray-100 dark:bg-gray-900 dark:text-white"
+          class="
+            container
+            mx-auto
+            p-6
+            shadow
+            rounded-lg
+            bg-gray-100
+            dark:bg-gray-900 dark:text-white
+          "
         >
           <Nuxt />
         </section>

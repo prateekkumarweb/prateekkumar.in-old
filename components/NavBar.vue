@@ -1,21 +1,36 @@
 <template>
   <header
-    class="flex flex-col md:flex-row md:items-center md:justify-around px-4 py-3 md:px-0 bg-primary text-white"
+    class="
+      flex flex-col
+      md:flex-row md:items-center md:justify-around
+      px-4
+      py-3
+      md:px-0
+      bg-primary
+      text-white
+    "
   >
     <div class="flex flex-row items-center">
       <div class="md:mr-3 flex-1">
         <NuxtLink to="/" class="text-2xl">Prateek Kumar</NuxtLink>
       </div>
-      <div class="text-xl">
+      <div class="text-xl md:hidden">
         <font-awesome
           :icon="['fas', navOpen ? 'times' : 'bars']"
-          class="md:hidden cursor-pointer"
+          class="cursor-pointer"
           @click="toggleNav()"
         ></font-awesome>
       </div>
     </div>
     <nav
-      class="flex flex-col md:flex-row items-start md:items-center text-xl md:block"
+      class="
+        flex flex-col
+        md:flex-row
+        items-start
+        md:items-center
+        text-xl
+        md:block
+      "
       :class="{ hidden: !navOpen }"
     >
       <NuxtLink to="/blog/" class="hover:text-gray-400 m-2 text-xl align-middle"
@@ -37,7 +52,17 @@
         <span class="md:hidden pl-2">GitHub</span>
       </a>
       <a
-        class="m-2 inline-block rounded-full py-2 px-3 bg-blue-300 text-primary align-middle text-sm"
+        class="
+          m-2
+          inline-block
+          rounded-full
+          py-2
+          px-3
+          bg-blue-300
+          text-primary
+          align-middle
+          text-sm
+        "
         href="javascript:"
         title="Switch theme"
         @click="changeTheme()"

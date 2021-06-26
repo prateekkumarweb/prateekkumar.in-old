@@ -23,9 +23,9 @@ export default Vue.extend({
   },
 
   async created() {
-    this.publications = ((await this.$content(
-      'me/publications'
-    ).fetch()) as any).publications;
+    this.publications = (
+      (await this.$content('me/publications').fetch()) as any
+    ).publications;
   },
 });
 </script>

@@ -4,7 +4,13 @@
       <NuxtLink to="/blog/">
         <font-awesome :icon="['fas', 'arrow-left']"></font-awesome>
         <span
-          class="pl-2 text-primary underline dark:text-blue-300 hover:no-underline"
+          class="
+            pl-2
+            text-primary
+            underline
+            dark:text-blue-300
+            hover:no-underline
+          "
         >
           Back to all posts
         </span>

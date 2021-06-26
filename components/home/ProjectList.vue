@@ -29,9 +29,9 @@ export default Vue.extend({
   },
 
   async created() {
-    this.projects = ((await this.$content(
-      'me/projects'
-    ).fetch()) as any).projects;
+    this.projects = (
+      (await this.$content('me/projects').fetch()) as any
+    ).projects;
   },
 });
 </script>
