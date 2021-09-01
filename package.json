@@ -23,7 +23,7 @@
     "@tailwindcss/typography": "^0.4.1",
     "fuse.js": "^6.4.6",
     "nuxt": "^2.15.7",
-    "remark-emoji": "^2.2.0",
+    "remark-emoji": "^3.0.1",
     "vue-class-component": "^7.2.6",
     "vue-disqus": "^4.0.1"
   },
